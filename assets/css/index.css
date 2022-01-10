@@ -1,24 +1,122 @@
+/*General Style*/
+@font-face
+{
+    font-family: 'Raleway', sans-serif;
+}
+
+*
+{
+    font-family: Raleway, Helvetica, sans-serif;
+}
+body
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 a
 {
+    color: black;
     text-decoration: none;
 }
 
-*:visited
+a:visited
 {
     color: black;
 }
 
-.fa-star
+/*Header Style*/
+
+body > header
 {
-    color: blue;
+    display: flex;
+    width: 93%;
+    justify-content: space-between;
 }
 
-.ranking_not
+#logo
 {
-    color: grey;
+    -ms-transform: scale(0.67,0.67);
+    -webkit-transform: scale(0.67,0.67);
+    -moz-transform: scale(0.67,0.67);
+    margin: -23px -47px;
 }
 
-.money, .cheapest
+nav
 {
+    display: flex;
+    align-self:center;
+    height: 100%;
+
+}
+
+.nav_active, .nav_inactive
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 135px;
+    height: 100px;
+    margin: 0px 2px;
+    padding: 0px 13px;
+}
+
+.nav_active
+{
+    border-top: 4px solid #0065FC;
+}
+.nav_inactive:hover
+{
+    border-top: 4px solid #0065FC;
+    border-bottom: 4px solid #FFF;
+}
+
+
+/*Style Main*/
+main
+{
+    display: flex;
+    width: 93%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+/*Style Footer*/
+
+footer
+{
+    display: flex;
+    width: 100%;
+    background-color: #F2F2F2;
+    justify-content: center;
+}
+
+footer > section
+{
+    display: flex;
+    justify-content: space-between;
+    width: 93%;
+}
+
+.menu_footer
+{
+    width: 33%;
+    padding: 10px 0px;
+}
+
+.menu_footer > h4
+{
+    font-size: large;
     font-weight: bold;
+    padding-bottom: 1%;
+}
+
+.menu_footer > p
+{
+    padding: 0.5%
 }
