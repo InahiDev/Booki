@@ -13,7 +13,7 @@
     <title>Booki - Site de réservation en ligne</title>
 </head>
 <body>
-    <header class="header_site">
+    <header>
         <a id="logo" href="#logo"><h1><img src="assets/img/logo/Booki@3x.png" alt="Logo Booki" title="Logo Booki" /></h1></a>
         <nav>
             <div>
@@ -32,16 +32,13 @@
 
         <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
         <p>En plein centre ville ou en pleine nature</p>
-        <div class="localisation">
-            <form method="post" action="" id="recherche">
-                <i class="fas fa-map-marker-alt"></i>
-                <img />
-                <input type="search" name="localite" id="localite" placeholder="Marseille, France"/>
-                <input type="image" value="Rechercher"/>
-            </form>
-        </div>
+        <form method="post" action="" id="search">
+            <i class="fas fa-map-marker-alt"></i>
+            <input type="search" name="localite" id="city" placeholder="Marseille, France"/>
+            <input type="image" value="Rechercher"/>
+        </form>
         <div class="filters">
-            <h2>Filtres</h2>
+            <h3>Filtres</h3>
             <p><i class="fas fa-money-bill-wave"></i>Économique</p>
             <p><i class="fas fa-child"></i>Familial</p>
             <p><i class="fas fa-heart"></i>Romantique</p>
