@@ -21,6 +21,15 @@ a:visited
     color: black;
 }
 
+.fa-star
+{
+    color: #0065FC;
+}
+
+.ranking-minus
+{
+    color: #F2F2F2;
+}
 /*Header Style*/
 
 body > header
@@ -101,7 +110,7 @@ main > form
     align-items: center;
     margin-bottom: 1%;
 }
-form :nth-child(1)
+main > form :nth-child(1)
 {
     box-sizing: border-box;
     background-color: #F2F2F2;
@@ -178,12 +187,14 @@ form :nth-child(3)
     border-color: #0065FC;
     color: #FFF;
 }
+/*Proposition changement couleur icone
 .filters i:hover
 {
     color: #FFF;
     background-color: #0065FC;
     border-color: #0065FC;
 }
+*/
 .filters p
 {
     justify-content: center;
@@ -210,18 +221,188 @@ form :nth-child(3)
 }
 
 /*Style Infoville */
-.info_ville
+.info-city
 {
     display: flex;
     align-items: center;
     width: 100%
 }
-.info_ville > img
+.info-city > img
 {
     height: 33px;
     width: 33px;
     margin-right: 1%;
 }
+/*Style section hébergements populaire*/
+.container-lodging-popular
+{
+    display: flex;
+    justify-content: space-around;
+    margin: 2% 0%;
+    gap: 7%;
+}
+.money, .cheapest
+{
+    font-weight: bold;
+}
+/*Style hebergements*/
+
+#lodging
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #F2F2F2;
+    width: 66%;
+    min-width: 390px;
+    border-radius: 25px;
+    row-gap: 20px;
+}
+#lodging > header > h2
+{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+#lodging > main
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    width: 100%;
+    row-gap: 20px;
+}
+
+.card-lodging
+{
+    background-color: #FFF;
+    width: 290px;
+    height: 245px;
+    border-radius: 25px;
+    align-content: space-around;
+}
+
+.img-lodging > img
+{
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 265px;
+    height: 151px;
+    object-fit: cover;
+    border: 4px solid #FFF;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    
+}
+.info-lodging
+{
+    display: flex;
+    flex-direction: column;
+    height: 90px;
+    justify-content: space-around;
+    padding-left: 5%;
+}
+.info-lodging > h3
+{
+    font-size: large;
+    font-weight: bold;
+}
+
+#lodging > form > input
+{
+    width: 166px;
+    height: 29px;
+    font-size: large;
+    font-weight: bold;
+    border: none;
+    background-color: #F2F2F2;
+}
+#lodging > form > input:hover
+{
+    cursor: pointer;
+}
+/*Style Populaire*/
+
+.populars
+{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 50px;
+    border-radius: 25px;
+    background-color: #F2F2F2;
+    width: 30%;
+    min-width: 363px;
+    row-gap: 20px;
+}
+.populars > header
+{
+    display: flex;
+    justify-content: space-between;
+    min-width: 263px;
+}
+.populars > header > h2
+{
+    font-size: x-large;
+    font-weight: bold;
+}
+.fa-chart-line
+{
+    font-size: x-large;
+}
+.card-popular
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFF;
+    min-width: 263px;
+    border-radius: 25px;
+    padding-right: 5px;
+
+}
+.vignette-popular
+{
+    width: 40%;
+    min-width: 110px;
+    height: 178px;
+    object-fit: cover;
+    border: 8px solid #FFF;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+.info-popular
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    min-width: 105px;
+    padding: 25px 0;
+    padding: 15px;
+}
+.text-popular
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 76px;
+}
+.text-popular > h3
+{
+    font-size: large;
+    font-weight: bold;
+}
+.text-popular > .ranking
+{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/*Style Activités*/
+
 /*Style Footer*/
 
 footer
