@@ -120,6 +120,7 @@ form :nth-child(2)
     color: black;
     border: 1px solid #F2F2F2;
     border: 1px 0px;
+    overflow: hidden;
 }
 /* Défaut du cadre lors de la sélection, propriété que je n'arrive pas à faire marcher
 #city::-moz-selection
@@ -142,65 +143,85 @@ form :nth-child(3)
 }
 
 /*Section Filter */
-.filters
+.filters-general
 {
     display: flex;
     align-items: center;
     font-weight: bold;
     width: 100%;
+    height: 50px;
 }
 
-.filters > h3
+.filters-general > h3
 {
     font-size: large;
     margin-right: 1%;
     min-width: 55px;
 
 }
-.filters p
+.filters-general div
 {
     display: flex;
-    box-sizing: border-box;
     align-items: center;
+    justify-content: space-between;
     font-size: large;
     border: 3px solid #F2F2F2;
     border-left: 0px;
-    padding-right: 1%;
+    height: 100%;
     margin: 0% 1%;
-    height: 66px;
-    border-radius: 33px;
+    border-radius: 25px;
+    z-index: 0;
 }
-.filters :nth-child(2)
+.filters-general div:hover
 {
-    min-width: 190px;
+    background-color: #0065FC;
+    border-color: #0065FC;
+    color: #FFF;
 }
-.filters :nth-child(3)
+.filters i:hover
 {
-    min-width: 150px;
+    color: #FFF;
+    background-color: #0065FC;
+    border-color: #0065FC;
 }
-.filters :nth-child(4)
+.filters p
 {
-    min-width: 185px;
+    justify-content: center;
+    padding: 0 10px 0 5px;
 }
-.filters :nth-child(5)
+.animaux
 {
-    min-width: 256px;
+    min-width: 159px;
 }
 .fa-money-bill-wave, .fa-child, .fa-dog, .fa-heart
 {
     display: flex;
     align-items: center;
-    justify-content: center;
-    height: 66px;
-    width: 66px;
-    border-radius: 33px;
+    justify-content: space-around;
+    height: 100%;
+    min-width: 50px;
+    border: 3px solid #DEEBFF;
+    border-radius: 50%;
     color: #0065FC;
     background-color: #DEEBFF;
-    margin-right: 3%;
-    z-index: 2;
+    position: relative;
+    left: -5px;
+    z-index: 1;
 }
 
-
+/*Style Infoville */
+.info_ville
+{
+    display: flex;
+    align-items: center;
+    width: 100%
+}
+.info_ville > img
+{
+    height: 33px;
+    width: 33px;
+    margin-right: 1%;
+}
 /*Style Footer*/
 
 footer
