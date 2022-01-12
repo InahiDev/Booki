@@ -83,7 +83,7 @@ nav
     align-items: center;
     width: 100%;
     height: 100%;
-    font-size: 90%;
+    font-size: 110%;
     font-weight: 200;
 }
 .nav-active a
@@ -106,35 +106,6 @@ nav
     font-weight: 500;
 }
 
-/*
-.nav-active
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    height: 100%;
-    width: 100%;
-    font-size: 90%;
-    font-weight: 200;
-    color: #0065FC;
-    font-weight: 400;
-}
-
-.nav-inactive
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    height: 100%;
-    width: 100%;
-    font-size: 90%;
-    font-weight: 200; 
-}
-*/
-
-
 /*Style Main*/
 main
 {
@@ -145,63 +116,74 @@ main
 }
 main > h2
 {
-    font-size: large;
+    font-size: 120%;
     font-weight: bold;
 }
 main > p
 {
     font-size: medium;
-    margin: 1% 0%;
+    margin: 10px 0%;
 }
 main > form
 {
     display: flex;
-    width: 31;
-    min-width: 24%;
+    width: 31%;
+    min-width: 185px;
     align-items: center;
-    margin-bottom: 1%;
+    margin: 1% 0;
 }
 main > form :nth-child(1)
 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     box-sizing: border-box;
+    width: 50px;
+    height: 50px;
     background-color: #F2F2F2;
     border: 1px solid #F2F2F2;
     border: 1px 0px 1px 1px;
     border-top-left-radius: 25% 23%;
     border-bottom-left-radius: 25% 23%;
-    padding: 3%;
+}
+.fa-map-marker-alt
+{
+    font-size: 120%;
 }
 form :nth-child(2)
 {
     box-sizing: border-box;
-    padding: 3%;
+    height: 50px;
     justify-content: left;
     font-weight: bold;
-    color: black;
     border: 1px solid #F2F2F2;
-    border: 1px 0px;
     overflow: hidden;
 }
-/* Défaut du cadre lors de la sélection, propriété que je n'arrive pas à faire marcher
-#city::-moz-selection
+#city:focus
 {
     box-sizing: border-box;
-    border: 0px;
+    border: 0px solid #F2F2F2;
 }
-*/
+
 form :nth-child(3)
 {
+    display: flex;
+    align-items: center;
     box-sizing: border-box;
+    height: 50px;
     border: 1px solid #0065FC;
-    border-left: 0ox;
     border-top-right-radius: 15% 30%;
     border-bottom-right-radius: 15% 30%;
-    padding: 3%;
     color: #FFF;
     font-weight: bold;
     background-color: #0065FC;
+    padding: 0 3%;
 }
 
+form :nth-child(4)
+{
+    background-color: #0065FC;
+}
 /*Section Filter */
 .filters-general
 {
@@ -210,6 +192,7 @@ form :nth-child(3)
     font-weight: bold;
     width: 100%;
     height: 50px;
+    margin: 1% 0;
 }
 
 .filters-general > h3
