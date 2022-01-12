@@ -36,16 +36,15 @@ body > header
 {
     display: flex;
     width: 93%;
-    height: 100px;
     justify-content: space-between;
-    align-items: center;
+    box-sizing: border-box;
 }
 
 #logo
 {
     display: flex;
-    align-items: center;
-    box-sizing: content-box;
+    align-self: center;
+    box-sizing: border-box;
     width: 10%;
     height: 100%;
     min-width: 67px;
@@ -53,33 +52,62 @@ body > header
 }
 #logo img
 {
-
+    box-sizing: border-box;
     width: 100%;
     height: 100%;
     object-fit: contain;
-
+    padding: 20% 0;
 }
 
 nav
 {
     display: flex;
-    align-self:center;
+    justify-content: center;
     width: 24%;
-    height: 100%;
     min-width: 260px;
-    min-height: 41px;
-    border: 1px solid black;
-
-}
-nav div
-{
-    box-sizing: border-box;
-    width: 50%;
-    height: 100%;
-    min-width: 130px;
-    min-height: 80px;
+    height: inherit;
 }
 .nav-active, .nav-inactive
+{
+    display: flex;
+    flex-grow: 1;
+    width: 50%;
+    min-width: 130px;
+    height: 100%;
+    min-height: 80px;
+}
+.nav-active a, .nav-inactive a
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 90%;
+    font-weight: 200;
+}
+.nav-active a
+{
+    box-sizing: border-box;
+    border-top: 3px solid #0065FC;
+    border-bottom: 3px solid #FFF;
+}
+.nav-active p
+{
+    color: #0065FC;
+    font-weight: 500;
+}
+.nav-inactive a:hover
+{
+    box-sizing: border-box;
+    border-top: 3px solid #0065FC;
+    border-bottom: 3px solid #FFF;
+    color: #0065FC;
+    font-weight: 500;
+}
+
+/*
+.nav-active
 {
     display: flex;
     align-items: center;
@@ -89,24 +117,22 @@ nav div
     width: 100%;
     font-size: 90%;
     font-weight: 200;
-}
-nav div:nth-child(1)
-{
-    border-top: 3px solid #0065FC;
-    border-bottom: 3px solid #FFF;
-}
-.nav-active
-{
     color: #0065FC;
     font-weight: 400;
 }
-nav div:nth-child(2) :hover
+
+.nav-inactive
 {
-    border-top: 3px solid #0065FC;
-    border-bottom: 3px solid #FFF;
-    color: #0065FC;
-    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    font-size: 90%;
+    font-weight: 200; 
 }
+*/
 
 
 /*Style Main*/
