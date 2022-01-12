@@ -36,49 +36,74 @@ body > header
 {
     display: flex;
     width: 93%;
+    height: 100px;
     justify-content: space-between;
+    align-items: center;
 }
 
 #logo
 {
-    transform: none;
-    -ms-transform: scale(0.67,0.67);
-    -webkit-transform: scale(0.67,0.67);
-    -moz-transform: scale(0.67,0.67);
-    margin: -23px -47px;
+    display: flex;
+    align-items: center;
+    box-sizing: content-box;
+    width: 10%;
+    height: 100%;
+    min-width: 67px;
+    min-height: 41px;
+}
+#logo img
+{
+
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
 }
 
 nav
 {
     display: flex;
     align-self:center;
+    width: 24%;
     height: 100%;
-}
+    min-width: 260px;
+    min-height: 41px;
+    border: 1px solid black;
 
-.nav_active, .nav_inactive
+}
+nav div
+{
+    box-sizing: border-box;
+    width: 50%;
+    height: 100%;
+    min-width: 130px;
+    min-height: 80px;
+}
+.nav-active, .nav-inactive
 {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
     box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    width: 214px;
-    height: 100px;
-    font-size: x-large;
+    height: 100%;
+    width: 100%;
+    font-size: 90%;
     font-weight: 200;
 }
-
-.nav_active
+nav div:nth-child(1)
 {
-    border-top: 4px solid #0065FC;
+    border-top: 3px solid #0065FC;
+    border-bottom: 3px solid #FFF;
+}
+.nav-active
+{
     color: #0065FC;
     font-weight: 400;
 }
-.nav_inactive:hover
+nav div:nth-child(2) :hover
 {
-    border-top: 4px solid #0065FC;
-    border-bottom: 4px solid #FFF;
+    border-top: 3px solid #0065FC;
+    border-bottom: 3px solid #FFF;
     color: #0065FC;
     font-weight: 400;
 }
