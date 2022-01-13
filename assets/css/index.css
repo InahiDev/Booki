@@ -160,10 +160,10 @@ form :nth-child(2)
     border: 1px solid #F2F2F2;
     overflow: hidden;
 }
-#city:focus
+#city
 {
     box-sizing: border-box;
-    border: 0px solid #F2F2F2;
+    outline: none;
 }
 
 form :nth-child(3)
@@ -291,7 +291,7 @@ form :nth-child(4)
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
-    padding: 25px;
+    padding: 25px 2%;
     background-color: #F2F2F2;
     width: 66%;
     min-width: 609px;
@@ -305,30 +305,42 @@ form :nth-child(4)
     display: flex;
     align-items: center;
     height: 40px;
-    font-size: x-large;
+    font-size: xx-large;
     font-weight: bold;
+    margin: 1% 0;
 }
 
 #lodging > main
 {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-between;
     align-content: flex-start;
     width: 100%;
     row-gap: 10px;
     height: min-content;
-    border: 1px solid red;
 }
-
+.lodging-block1
+{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 5px;
+    width: 100%;
+    height: 100%;
+}
+.lodging-block2
+{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 5px;
+    width: 100%;
+    height: 50%; 
+}
 .card-lodging
 {
     background-color: #FFF;
-    width: 30%;
-    height: 40%;
-    min-width: 160px;
-    min-height: 130px;
+    width: 330px;
+    height: 250px;
     border-radius: 25px;
 }
 .card-lodging a
@@ -343,7 +355,7 @@ form :nth-child(4)
 .img-lodging
 {
     width: 100%;
-    height: 50%;
+    height: 60%;
     min-width: 160px;
     min-height: 77px;
 }
@@ -353,7 +365,7 @@ form :nth-child(4)
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border: 4px solid #FFF;
+    border: 6px solid #FFF;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     
@@ -364,29 +376,26 @@ form :nth-child(4)
     flex-direction: column;
     box-sizing: border-box;
     width: 100%;
-    height: 50%;
+    height: 40%;
     justify-content: space-around;
     padding: 0 5% 3% 5%;
 }
 .info-lodging > h3
 {
     width: 100%;
-    height: 30%;
-    font-size: medium;
+    font-size: x-large;
     font-weight: bold;
 }
-.info-lodging > p
-{
-    height: 30%;
-}
+
 #lodging > form > input
 {
-    width: 166px;
+    width: fit-content;
     height: 29px;
     font-size: large;
     font-weight: bold;
     border: none;
     background-color: #F2F2F2;
+    margin: 2% 0 1% 0;
 }
 #lodging > form > input:hover
 {
@@ -404,7 +413,7 @@ form :nth-child(4)
     background-color: #F2F2F2;
     width: 30%;
     min-width: 320px;
-    padding: 25px;
+    padding: 25px 2%;
     row-gap: 10px;
 }
 .populars > header
@@ -415,10 +424,11 @@ form :nth-child(4)
     width: 100%;
     height: 40px;
     align-self: flex-start;
+    margin: 2% 0;
 }
 .populars > header > h2
 {
-    font-size: x-large;
+    font-size: xx-large;
     font-weight: bold;
 }
 .fa-chart-line
@@ -436,7 +446,7 @@ form :nth-child(4)
 {
     display: flex;
     width: 100%;
-    height: 23%;
+    height: 30%;
 }
 .card-popular a
 {
@@ -479,11 +489,11 @@ form :nth-child(4)
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 76px;
+    height: 60%;
 }
 .text-popular > h3
 {
-    font-size: medium;
+    font-size: x-large;
     font-weight: bold;
 }
 .text-popular > .ranking
@@ -502,7 +512,7 @@ form :nth-child(4)
 }
 #activities > header
 {
-    font-size: x-large;
+    font-size: xx-large;
     font-weight: bold;
 }
 
@@ -517,17 +527,25 @@ form :nth-child(4)
 {
     display: flex;
     box-sizing: border-box;
+    font-size: large;
     font-weight: bold;
-    padding: 2px 0px;
+    padding: 30px 5%;
+    width: 100%;
     height: 75px;
     align-items: center;
-    padding-left: 5%;
+    z-index: 2;
+}
+.link-solo
+{
+    width: 23%;
+    height: 534px;
+    border-radius: 25px;
 }
 .solo-activity
 {
     display: flex;
     flex-direction: column;
-    width:23%;
+    width: 100%;
     height: 534px;
     border-radius: 25px;
     box-shadow: -5px 5px 10px #F2F2F2, 5px 5px 10px #F2F2F2;
@@ -535,10 +553,11 @@ form :nth-child(4)
 .solo-activity > img
 {
     width: 100%;
-    height: 469px;
+    height: 100%;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     object-fit: cover;
+    z-index: 1;
 }
 
 .duo
@@ -549,12 +568,17 @@ form :nth-child(4)
     width: 23%;
     height: 534px;
 }
-
+.link-fort
+{
+    width: 100%;
+    height: 52%;
+    border-radius: 25px;
+}
 .fort
 {
     display: flex;
     flex-direction: column;
-    height: 52%;
+    height: 100%;
     width: 100%;
     border-radius: 25px;
     box-shadow: -5px 5px 10px #F2F2F2, 5px 5px 10px #F2F2F2;
@@ -562,16 +586,23 @@ form :nth-child(4)
 .fort > img
 {
     width: 100%;
-    height: 72%;
+    height: 100%;
     object-fit: cover;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
+    z-index: 1;
+}
+.link-frioul
+{
+    width: 100%;
+    height: 37%;
+    border-radius: 25px;
 }
 .frioul
 {
     display: flex;
     flex-direction: column;
-    height: 37%;
+    height: 100%;
     width: 100%;
     border-radius: 25px;
     box-shadow: -5px 5px 10px #F2F2F2, 5px 5px 10px #F2F2F2;
@@ -579,44 +610,59 @@ form :nth-child(4)
 .frioul > img
 {
     width: 100%;
-    height: 62%;
+    height: 100%;
     object-fit: cover;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
+    z-index: 1;
+}
+.link-dame
+{
+    width: 100%;
+    height: 43%;
+    border-radius: 25px;
 }
 .dame
 {
     display: flex;
     flex-direction: column;
-    height: 43%;
+    height: 100%;
     width: 100%;
     border-radius: 25px;
     box-shadow: -5px 5px 10px #F2F2F2, 5px 5px 10px #F2F2F2;
 }
 .dame > img
 {
-    height: 67%;
+    height: 100%;
     width: 100%;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     object-fit: cover;
+    z-index: 1;
+}
+.link-parc
+{
+    width: 100%;
+    height: 47%;
+    border-radius: 25px;
 }
 .parc
 {
     display: flex;
     flex-direction: column;
-    height:47%;
+    height: 100%;
     width: 100%;
     border-radius: 25px;
     box-shadow: -5px 5px 10px #F2F2F2, 5px 5px 10px #F2F2F2;
 }
 .parc > img
 {
-   height: 70%;
+   height: 100%;
    width: 100%;
    border-top-left-radius: 25px;
    border-top-right-radius: 25px;
-   object-fit: cover; 
+   object-fit: cover;
+   z-index: 1;
 }
 /*Style Footer*/
 

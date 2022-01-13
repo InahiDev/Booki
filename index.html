@@ -34,7 +34,7 @@
         <p>En plein centre ville ou en pleine nature</p>
         <form method="post" action="" id="search">
             <i class="fas fa-map-marker-alt"></i>
-            <input type="search" name="localite" id="city" placeholder="Marseille, France"/>
+            <input type="search" name="city" id="city" placeholder="Marseille, France"/>
             <input type="image" value="Rechercher"/>
             <i class="fa-solid fa-magnifying-glass"></i> 
         </form>
@@ -58,7 +58,7 @@
                     <h2>Hébergements à Marseille</h2>
                 </header>
                 <main>
-
+                    <section class="lodging-block1">
                     <!--Carte Auberge La Cannebière-->
                     <article class="card-lodging">
                         <a href="#">
@@ -121,7 +121,8 @@
                             </div>
                         </a>
                     </article>
-
+                    </section>
+                    <section class="lodging-block2">
                     <!--Carte Hôtel de la mer-->
                     <article class="card-lodging">
                         <a href="#">
@@ -184,6 +185,7 @@
                             </div>
                         </a>
                     </article>
+                    </section>
                 </main>
                 <form>
                     <input type="submit" value="Afficher plus" />
@@ -277,53 +279,61 @@
 
             <section class="activities">
                 <!--Carte Vieux Port-->
-                <article class="solo-activity">
-                    <img src="assets/img/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
-                        alt="Vieux port" />
-                    <h3>Vieux Port</h3>
-                </article>
-
+                <a href="#" class="link-solo">
+                    <article class="solo-activity">
+                        <img src="assets/img/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                            alt="Vieux port" />
+                        <h3>Vieux Port</h3>
+                    </article>
+                </a>
                 <!--Duo cartes Pomègues/Frioul-->
                 <div class="duo">
 
                     <!--Carte Fort de Pomègues-->
-                    <article class="fort">
-                        <img src="assets/img/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
-                            alt="Fort de Pomègues" />
-                        <h3>Fort de Pomègues</h3>
-                    </article>
-
+                    <a href="#" class="link-fort">
+                        <article class="fort ">
+                            <img src="assets/img/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                                alt="Fort de Pomègues" />
+                            <h3>Fort de Pomègues</h3>
+                        </article>
+                    </a>
                     <!--Carte Îles du Frioul-->
-                    <article class="frioul">
-                        <img src="assets/img/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
-                            alt="Îles du Frioul" />
-                        <h3>Îles du Frioul</h3>
-                    </article>
+                    <a href="#" class="link-frioul">
+                        <article class="frioul">
+                            <img src="assets/img/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                                alt="Îles du Frioul" />
+                            <h3>Îles du Frioul</h3>
+                        </article>
+                    </a>
                 </div>
 
                 <!--Carte Parc National des Calanques-->
-                <article class="solo-activity">
-                    <img src="assets/img/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
-                        alt="Parc National des Calanques" />
-                    <h3>Parc National des Calanques</h3>
-                </article>
-
+                <a href="#" class="link-solo">
+                    <article class="solo-activity">
+                        <img src="assets/img/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                            alt="Parc National des Calanques" />
+                        <h3>Parc National des Calanques</h3>
+                    </article>
+                </a>
                 <!--Duo cartes Notre-Dame/Parc-->
                 <div class="duo">
 
                     <!--Carte Notre-Dame-->
-                    <article class="dame">
-                        <img src="assets/img/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
-                            alt="Notre-Dame-de-la-Garde" />
-                        <h3>Notre-Dame-de-la-Garde</h3>
-                    </article>
-
+                    <a href="#" class="link-dame">
+                        <article class="dame">
+                            <img src="assets/img/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                                alt="Notre-Dame-de-la-Garde" />
+                            <h3>Notre-Dame-de-la-Garde</h3>
+                        </article>
+                    </a>
                     <!--Carte Parc Longchamp-->
-                    <article class="parc">
-                        <img src="assets/img/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
-                            alt="Parc Longchamp" />
-                        <h3>Parc Longchamp</h3>
-                    </article>
+                    <a href="#" class="link-parc">
+                        <article class="parc">
+                            <img src="assets/img/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+                                alt="Parc Longchamp" />
+                            <h3>Parc Longchamp</h3>
+                        </article>
+                    </a>
                 </div>
             </section>
         </section>
