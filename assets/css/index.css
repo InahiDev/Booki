@@ -510,7 +510,7 @@ form :nth-child(4)
     display: flex;
     flex-direction: column;
     row-gap: 20px;
-    margin: 20px 0px;
+    margin: 4% 0px;
 }
 #activities > header
 {
@@ -549,7 +549,7 @@ form :nth-child(4)
     width: 23%;
     height: 534px;
     border-radius: 25px;
-    box-shadow: -5px 5px 10px #F2F2F2, 5px 5px 10px #F2F2F2;
+    box-shadow: -5px -5px 10px #F2F2F2, 5px 5px 10px #F2F2F2;
 }
 .solo-activity img
 {
@@ -573,7 +573,7 @@ form :nth-child(4)
     height: 52%;
     width: 100%;
     border-radius: 25px;
-    box-shadow: -5px 5px 10px #F2F2F2, 5px 5px 10px #F2F2F2;
+    box-shadow: -5px -5px 10px #F2F2F2, 5px 5px 10px #F2F2F2;
 }
 .fort img
 {
@@ -589,7 +589,7 @@ form :nth-child(4)
     width: 100%;
     height: 37%;
     border-radius: 25px;
-    box-shadow: -5px 5px 10px #F2F2F2, 5px 5px 10px #F2F2F2;
+    box-shadow: -5px -5px 10px #F2F2F2, 5px 5px 10px #F2F2F2;
 }
 .frioul img
 {
@@ -605,7 +605,7 @@ form :nth-child(4)
     width: 100%;
     height: 43%;
     border-radius: 25px;
-    box-shadow: -5px 5px 10px #F2F2F2, 5px 5px 10px #F2F2F2;
+    box-shadow: -5px -5px 10px #F2F2F2, 5px 5px 10px #F2F2F2;
 }
 .dame img
 {
@@ -621,7 +621,7 @@ form :nth-child(4)
     width: 100%;
     height: 47%;
     border-radius: 25px;
-    box-shadow: -5px 5px 10px #F2F2F2, 5px 5px 10px #F2F2F2;
+    box-shadow: -5px -5px 10px #F2F2F2, 5px 5px 10px #F2F2F2;
 }
 .parc img
 {
