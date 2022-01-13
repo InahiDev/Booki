@@ -171,6 +171,7 @@ form :nth-child(3)
     border-top-right-radius: 15% 30%;
     border-bottom-right-radius: 15% 30%;
     color: #FFF;
+    font-size: large;
     font-weight: bold;
     background-color: #0065FC;
     padding: 0 3%;
@@ -215,8 +216,9 @@ form :nth-child(4)
 }
 .filters-general div:hover
 {
+   
     background-color: #0065FC;
-    border-color: #0065FB;
+    border-color: #DEEBFF;
     color: #FFF;
 }
 /*Proposition changement couleur icone
@@ -249,7 +251,6 @@ form :nth-child(4)
     background-color: #DEEBFF;
     position: relative;
     left: -5px;
-    z-index: 1;
 }
 .fa-search
 {
