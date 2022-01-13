@@ -20,18 +20,16 @@ a:visited
 {
     color: black;
 }
-
 .fa-star
 {
     color: #0065FC;
 }
-
 .ranking-minus
 {
     color: #F2F2F2;
 }
-/*Header Style*/
 
+/*Header Style*/
 body > header
 {
     display: flex;
@@ -39,7 +37,6 @@ body > header
     justify-content: space-between;
     box-sizing: border-box;
 }
-
 #logo
 {
     display: flex;
@@ -58,7 +55,6 @@ body > header
     object-fit: contain;
     padding: 20% 0;
 }
-
 nav
 {
     display: flex;
@@ -165,7 +161,6 @@ form :nth-child(2)
     box-sizing: border-box;
     outline: none;
 }
-
 form :nth-child(3)
 {
     display: flex;
@@ -180,11 +175,11 @@ form :nth-child(3)
     background-color: #0065FC;
     padding: 0 3%;
 }
-
 form :nth-child(4)
 {
     background-color: #0065FC;
 }
+
 /*Section Filter */
 .filters-general
 {
@@ -195,7 +190,6 @@ form :nth-child(4)
     height: 50px;
     margin: 1% 0;
 }
-
 .filters-general > h3
 {
     font-size: large;
@@ -272,6 +266,7 @@ form :nth-child(4)
     width: 33px;
     margin-right: 1%;
 }
+
 /*Style section hébergements populaire*/
 .container-lodging-popular
 {
@@ -288,7 +283,6 @@ form :nth-child(4)
 }
 
 /*Style hebergements*/
-
 #lodging
 {
     display: flex;
@@ -303,7 +297,6 @@ form :nth-child(4)
     border-radius: 25px;
     row-gap: 5px;
 }
-
 #lodging > header > h2
 {
     display: flex;
@@ -313,7 +306,6 @@ form :nth-child(4)
     font-weight: bold;
     margin: 1% 0;
 }
-
 #lodging > div
 {
     display: flex;
@@ -393,7 +385,6 @@ form :nth-child(4)
     font-size: x-large;
     font-weight: bold;
 }
-
 #lodging > form > input
 {
     width: fit-content;
@@ -408,8 +399,8 @@ form :nth-child(4)
 {
     cursor: pointer;
 }
-/*Style Populaire*/
 
+/*Style Populaire*/
 .populars
 {
     display: flex;
@@ -655,8 +646,8 @@ form :nth-child(4)
    object-fit: cover;
    z-index: 1;
 }
-/*Style Footer*/
 
+/*Style Footer*/
 footer
 {
     display: flex;
@@ -664,7 +655,6 @@ footer
     background-color: #F2F2F2;
     justify-content: center;
 }
-
 footer > div
 {
     display: flex;
@@ -672,20 +662,17 @@ footer > div
     width: 93%;
     padding: 2% 0%;
 }
-
 .menu-footer
 {
     width: 33%;
     padding: 10px 0px;
 }
-
 .menu-footer > h4
 {
     font-size: large;
     font-weight: bold;
     padding-bottom: 2%;
 }
-
 .menu-footer > p
 {
     padding: 1% 0;
