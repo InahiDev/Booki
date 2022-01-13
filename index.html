@@ -25,6 +25,7 @@
                 <a href="#activities">
                     <p>Activités</p>
                 </a>
+            </div>
         </nav>
     </header>
    
@@ -32,10 +33,10 @@
 
         <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
         <p>En plein centre ville ou en pleine nature</p>
-        <form method="post" action="" id="search">
+        <form method="post" action="traitement.php" id="search">
             <i class="fas fa-map-marker-alt"></i>
             <input type="search" name="city" id="city" placeholder="Marseille, France"/>
-            <input type=""zimage" value="Rechercher"/>
+            <input type="submit" value="Rechercher"/>
             <i class="fa-solid fa-magnifying-glass"></i> 
         </form>
         <div class="filters-general">
@@ -57,136 +58,136 @@
                 <header>
                     <h2>Hébergements à Marseille</h2>
                 </header>
-                <main>
-                    <section class="lodging-block1">
-                    <!--Carte Auberge La Cannebière-->
-                    <article class="card-lodging">
-                        <a href="#">
-                            <figure class="img-lodging">
-                                <img src="assets/img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
-                                    alt="Auberge La Cannebière" />
-                            </figure>
-                            <div class="info-lodging">
-                                <h3>Auberge La Cannebière</h3>
-                                <p>Nuit à partir de <span class="cheapest">25</span><span class="money">€</span></p>
-                                <div class="rating">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star ranking-minus"></i>
+                <div>
+                    <div class="lodging-block1">
+                        <!--Carte Auberge La Cannebière-->
+                        <article class="card-lodging">
+                            <a href="#">
+                                <figure class="img-lodging">
+                                    <img src="assets/img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                                        alt="Auberge La Cannebière" />
+                                </figure>
+                                <div class="info-lodging">
+                                    <h3>Auberge La Cannebière</h3>
+                                    <p>Nuit à partir de <span class="cheapest">25</span><span class="money">€</span></p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star ranking-minus"></i>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </article>
+                            </a>
+                        </article>
 
-                    <!--Carte Hôtel du port-->
-                    <article class="card-lodging">
-                        <a href="#">
-                            <figure class="img-lodging">
-                                <img src="assets/img/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
-                                    alt="Hôtel du port" />
-                            </figure>
-                            <div class="info-lodging">
-                                <h3>Hôtel du port</h3>
-                                <p>Nuit à partir de 52<span class="money">€</span></p>
-                                <div class="rating">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
+                        <!--Carte Hôtel du port-->
+                        <article class="card-lodging">
+                            <a href="#">
+                                <figure class="img-lodging">
+                                    <img src="assets/img/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                                        alt="Hôtel du port" />
+                                </figure>
+                                <div class="info-lodging">
+                                    <h3>Hôtel du port</h3>
+                                    <p>Nuit à partir de 52<span class="money">€</span></p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </article>
+                            </a>
+                        </article>
 
-                    <!--Carte Hôtel Les mouettes-->
-                    <article class="card-lodging">
-                        <a href="#">
-                            <figure class="img-lodging">
-                                <img src="assets/img/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
-                                    alt="Hôtel Les mouettes" />
-                            </figure>
-                            <div class="info-lodging">
-                                <h3>Hôtel Les mouettes</h3>
-                                <p>Nuit à partir de 76<span class="money">€</span></p>
-                                <div class="rating">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star ranking-minus"></i>
+                        <!--Carte Hôtel Les mouettes-->
+                        <article class="card-lodging">
+                            <a href="#">
+                                <figure class="img-lodging">
+                                    <img src="assets/img/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                                        alt="Hôtel Les mouettes" />
+                                </figure>
+                                <div class="info-lodging">
+                                    <h3>Hôtel Les mouettes</h3>
+                                    <p>Nuit à partir de 76<span class="money">€</span></p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star ranking-minus"></i>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </article>
-                    </section>
-                    <section class="lodging-block2">
-                    <!--Carte Hôtel de la mer-->
-                    <article class="card-lodging">
-                        <a href="#">
-                            <figure class="img-lodging">
-                                <img src="assets/img/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
-                                    alt="Hôtel de la mer" />
-                            </figure>
-                            <div class="info-lodging">
-                                <h3>Hôtel de la mer</h3>
-                                <p>Nuit à partir de 46<span class="money">€</span></p>
-                                <div class="rating">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star ranking-minus"></i>
-                                    <i class="fas fa-star ranking-minus"></i>
+                            </a>
+                        </article>
+                    </div>
+                    <div class="lodging-block2">
+                        <!--Carte Hôtel de la mer-->
+                        <article class="card-lodging">
+                            <a href="#">
+                                <figure class="img-lodging">
+                                    <img src="assets/img/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                                        alt="Hôtel de la mer" />
+                                </figure>
+                                <div class="info-lodging">
+                                    <h3>Hôtel de la mer</h3>
+                                    <p>Nuit à partir de 46<span class="money">€</span></p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star ranking-minus"></i>
+                                        <i class="fas fa-star ranking-minus"></i>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </article>
+                            </a>
+                        </article>
 
-                    <!--Carte Auberge Le Panier-->
-                    <article class="card-lodging">
-                        <a href="#">
-                            <figure class="img-lodging">
-                                <img src="assets/img/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
-                                    alt="Auberge Le Panier" />
-                            </figure>
-                            <div class="info-lodging">
-                                <h3>Auberge Le Panier</h3>
-                                <p>Nuit à partir de <span class="cheapest">23</span><span class="money">€</span></p>
-                                <div class="rating">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star ranking-minus"></i>
+                        <!--Carte Auberge Le Panier-->
+                        <article class="card-lodging">
+                            <a href="#">
+                                <figure class="img-lodging">
+                                    <img src="assets/img/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+                                        alt="Auberge Le Panier" />
+                                </figure>
+                                <div class="info-lodging">
+                                    <h3>Auberge Le Panier</h3>
+                                    <p>Nuit à partir de <span class="cheapest">23</span><span class="money">€</span></p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star ranking-minus"></i>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </article>
+                            </a>
+                        </article>
 
-                    <!--Carte Hôtel chez Amina-->
-                    <article class="card-lodging">
-                        <a href="#">
-                            <figure class="img-lodging">
-                                <img src="assets/img/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
-                                    alt="Hôtel chez Amina" />
-                            </figure>
-                            <div class="info-lodging">
-                                <h3>Hôtel chez Amina</h3>
-                                <p>Nuit à partir de 96<span class="money">€</span></p>
-                                <div class="rating">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
+                        <!--Carte Hôtel chez Amina-->
+                        <article class="card-lodging">
+                            <a href="#">
+                                <figure class="img-lodging">
+                                    <img src="assets/img/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+                                        alt="Hôtel chez Amina" />
+                                </figure>
+                                <div class="info-lodging">
+                                    <h3>Hôtel chez Amina</h3>
+                                    <p>Nuit à partir de 96<span class="money">€</span></p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </article>
-                    </section>
-                </main>
+                            </a>
+                        </article>
+                    </div>
+                </div>
                 <form>
                     <input type="submit" value="Afficher plus" />
                 </form>
@@ -277,7 +278,7 @@
                 <h2>Activités à Marseille</h2>
             </header>
 
-            <section class="activities">
+            <div class="activities">
                 <!--Carte Vieux Port-->
                 <article class="solo-activity">
                     <a href="#" class="link-activities">
@@ -307,7 +308,6 @@
                             <h3>Îles du Frioul</h3>
                         </a>
                     </article>
-                    </a>
                 </div>
 
                 <!--Carte Parc National des Calanques-->
@@ -318,7 +318,6 @@
                         <h3>Parc National des Calanques</h3>
                     </a>
                 </article>
-                </a>
                 <!--Duo cartes Notre-Dame/Parc-->
                 <div class="duo">
 
@@ -330,7 +329,6 @@
                             <h3>Notre-Dame-de-la-Garde</h3>
                         </a>
                     </article>
-                    </a>
                     <!--Carte Parc Longchamp-->
                     <article class="parc">
                         <a href="#" class="link-activities">
@@ -339,14 +337,13 @@
                             <h3>Parc Longchamp</h3>
                         </a>
                     </article>
-                    </a>
                 </div>
-            </section>
+            </div>
         </section>
     </main>
 
     <footer>
-        <section>
+        <div>
             <section class="menu-footer">
                 <h4>A propos</h4>
                 <p><a href="#">Fonctionnement du site</a></p>
@@ -363,7 +360,7 @@
                 <p><a href="#">Centre d'aide</a></p>
                 <p><a href="#">Nous contacter</a></p>
             </section>
-        </section>
+        </div>
     </footer>
 </body>
 </html>

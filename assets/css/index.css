@@ -1,7 +1,7 @@
 /*General Style*/
 @font-face
 {
-    font-family: 'Raleway', sans-serif;
+    font-family: Raleway sans-serif;
     src: url(../font/Raleway-VariableFont_wght.ttf);
 }
 body
@@ -142,7 +142,7 @@ main > form :nth-child(1)
     height: 50px;
     background-color: #F2F2F2;
     border: 1px solid #F2F2F2;
-    border: 1px 0px 1px 1px;
+    border-left: 0px;
     border-top-left-radius: 25% 23%;
     border-bottom-left-radius: 25% 23%;
 }
@@ -314,7 +314,7 @@ form :nth-child(4)
     margin: 1% 0;
 }
 
-#lodging > main
+#lodging > div
 {
     display: flex;
     flex-direction: column;
@@ -665,7 +665,7 @@ footer
     justify-content: center;
 }
 
-footer > section
+footer > div
 {
     display: flex;
     justify-content: space-between;
