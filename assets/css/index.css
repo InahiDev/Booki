@@ -216,7 +216,7 @@ form :nth-child(4)
 .filters-general div:hover
 {
     background-color: #0065FC;
-    border-color: #0065FC;
+    border-color: #0065FB;
     color: #FFF;
 }
 /*Proposition changement couleur icone
@@ -251,7 +251,10 @@ form :nth-child(4)
     left: -5px;
     z-index: 1;
 }
-
+.fa-search
+{
+    display: none;
+}
 /*Style Infoville */
 .info-city
 {
