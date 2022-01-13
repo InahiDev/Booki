@@ -690,3 +690,128 @@ footer > div
     transition: 0.5s;
     z-index: 2;
 }
+
+/*--------------------------------- Version Téléphone Iphone 8 -----------------------------------------*/
+@media all and (max-width: 767px)
+{
+
+    /*Style Header*/
+    body > header
+    {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    #logo
+    {
+    
+        width: 204px;
+    }
+    nav
+    {
+        width: 100%;
+        height: 92px;
+
+    }
+    nav > div
+    {
+        align-items: center;
+        height: 100%;
+        border: none;
+    }
+    nav a
+    {
+        height: 100%;
+    }
+    .nav-active a
+    {
+        border-top: none;
+        border-bottom: 3px solid #0065FC;
+    }
+    nav p
+    {
+        border: none;
+        font-size: x-large;
+    }
+
+    /*Style Main*/
+    main
+    {
+        padding: 30px 0px;
+    }
+    main > h2
+    {
+        font-size: x-large;
+    }
+    main > form
+    {
+        box-sizing: border-box;
+        margin: 30px 0px;
+        width: 100%;
+        height: 50px;
+        border: 1px solid #F2F2F2;
+        border-radius: 15px;
+    }
+    main > form :nth-child(1)
+    {
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+    main > form :nth-child(2)
+    {
+        border: none;
+        height: 100%;
+        flex-grow: 1;
+        padding: 0 3%;
+        font-size: large;
+    }
+    input[value=Rechercher]
+    {
+        display: none;
+    }
+    .fa-search
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        background-color: #0065FC;
+        color: #FFF;
+        border-radius: 15px;
+    }
+    
+    /*Style Filters*/
+    .filters-general
+    {
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 10px;
+        height: 100%;
+        width: 100%;
+    }
+    .filters > h3
+    {
+        width: 100%;
+    }
+    .filters
+    {
+        box-sizing: border-box;
+        min-width: 40%;
+        height: fit-content;
+        min-height: 50px;
+        border: 1px solid black;
+    }
+    .filters > .fas
+    {
+        width: 50px;
+        height: 50px;
+
+    }
+    .filters p
+    {
+        width: 100%;
+        font-size: medium;
+        
+    }
+}
