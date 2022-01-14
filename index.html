@@ -36,15 +36,17 @@
         <form method="post" action="traitement.php" id="search">
             <i class="fas fa-map-marker-alt"></i>
             <input type="search" name="city" id="city" placeholder="Marseille, France"/>
-            <input type="submit" value="Rechercher"/>
-            <i class="fas fa-search"></i>
+            <button type="submit" value="Rechercher" />
+            <button type="submit" class="fas fa-search" />
         </form>
         <div class="filters-general">
             <h3>Filtres</h3>
-            <div class="filters"><i class="fas fa-money-bill-wave"></i><p>Économique</p></div>
-            <div class="filters"><i class="fas fa-child"></i><p>Familial</p></div>
-            <div class="filters"><i class="fas fa-heart"></i><p>Romantique</p></div>
-            <div class="filters"><i class="fas fa-dog"></i><p class="animaux">Animaux autorisés</p></div>
+            <div class="filters-button">
+                <div class="filters"><i class="fas fa-money-bill-wave"></i><p>Économique</p></div>
+                <div class="filters"><i class="fas fa-child"></i><p>Familial</p></div>
+                <div class="filters"><i class="fas fa-heart"></i><p>Romantique</p></div>
+                <div class="filters"><i class="fas fa-dog"></i><p class="dogs">Animaux autorisés</p></div>
+            </div>
         </div>
         <div class="info-city">
             <img src="assets/img/infograph/i_bleu.png" alt="info">
