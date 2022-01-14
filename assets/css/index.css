@@ -1,37 +1,34 @@
 /*General Style*/
-@font-face
-{
+@font-face {
     font-family: Raleway;
     src: url(../font/Raleway-VariableFont_wght.ttf);
 }
-body
-{
+
+body {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: Raleway, sans-serif;
+    font-size: 1.5vw;
 }
-a
-{
+
+a {
     color: black;
     text-decoration: none;
 }
-a:visited
-{
+
+a:visited {
     color: black;
 }
-.fa-star
-{
+.fa-star {
     color: #0065FC;
 }
-.ranking-minus
-{
+.ranking-minus {
     color: #F2F2F2;
 }
 
 /*Header Style*/
-body > header
-{
+body > header {
     display: flex;
     width: 93%;
     justify-content: space-between;
@@ -79,7 +76,7 @@ nav
     align-items: center;
     width: 100%;
     height: 100%;
-    font-size: 110%;
+    font-size: 80%;
     font-weight: 200;
 }
 .nav-active a
@@ -112,19 +109,20 @@ main
 }
 main > h2
 {
-    font-size: xx-large;
+    font-size: 110%;
     font-weight: bold;
 }
 main > p
 {
-    font-size: large;
+    font-size: 88%;
     margin: 10px 0%;
 }
 main > form
 {
     display: flex;
+    max-width: 635px;
     width: 31%;
-    min-width: 185px;
+    height: auto;
     align-items: center;
     margin: 1% 0;
 }
@@ -133,25 +131,22 @@ main > form :nth-child(1)
     display: flex;
     justify-content: center;
     align-items: center;
-    box-sizing: border-box;
-    width: 50px;
-    height: 50px;
+    flex-grow: 0;
+    padding: 4%;
     background-color: #F2F2F2;
-    border: 1px solid #F2F2F2;
-    border-left: 0px;
-    border-top-left-radius: 25% 23%;
-    border-bottom-left-radius: 25% 23%;
+    border-top-left-radius: 25% 30%;
+    border-bottom-left-radius: 25% 30%;
 }
 .fa-map-marker-alt
 {
-    font-size: 120%;
+    font-size: 80%;
 }
 
-form :nth-child(2)
-{
-    box-sizing: border-box;
-    height: 50px;
-    justify-content: left;
+form :nth-child(2) {
+    display: flex;
+    padding: 3%;
+    flex-grow: 1;
+    font-size: 90%;
     font-weight: bold;
     padding-left: 1%;
     border: 1px solid #F2F2F2;
@@ -159,7 +154,9 @@ form :nth-child(2)
 }
 
 form input::placeholder {
+    opacity: 1;
     font-weight: bold;
+    font-size: 105%;
 }
 
 #city
@@ -171,16 +168,16 @@ form :nth-child(3)
 {
     display: flex;
     align-items: center;
-    box-sizing: border-box;
-    height: 50px;
-    border: 1px solid #0065FC;
-    border-top-right-radius: 12px;
-    border-bottom-right-radius: 12px;
+    flex-grow: 0;
+    padding: 3% 3%;
+    border: 2px solid #0065FC;
+    border-top-right-radius: 12% 25%;
+    border-bottom-right-radius: 12% 25%;
     color: #FFF;
-    font-size: large;
+    font-size: 80%;
+    height: 100%;
     font-weight: bold;
     background-color: #0065FC;
-    padding: 0 3%;
 }
 form :nth-child(4)
 {
