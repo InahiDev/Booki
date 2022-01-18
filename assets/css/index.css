@@ -1,4 +1,4 @@
-/*General Style*/
+/*---------------------------------General Style--------------------------*/
 @font-face {
     font-family: Raleway;
     src: url(../font/Raleway-VariableFont_wght.ttf);
@@ -20,15 +20,17 @@ a {
 a:visited {
     color: black;
 }
+
 .fa-star {
     font-size: 90%;
     color: #0065FC;
 }
+
 .ranking-minus {
     color: #F2F2F2;
 }
 
-/*Header Style*/
+/*-------------------------------------Header Style--------------------------------*/
 body > header {
     display: flex;
     width: 93%;
@@ -36,6 +38,7 @@ body > header {
     justify-content: space-between;
     box-sizing: border-box;
 }
+
 #logo {
     display: flex;
     align-self: center;
@@ -44,6 +47,7 @@ body > header {
     height: auto;
     max-width: 179px;
 }
+
 #logo img {
     box-sizing: border-box;
     width: 100%;
@@ -51,12 +55,14 @@ body > header {
     object-fit: contain;
     padding: 20% 0;
 }
+
 nav {
     display: flex;
     justify-content: center;
     width: 24%;
     min-width: 260px;
 }
+
 .nav-active, .nav-inactive {
     display: flex;
     flex-grow: 1;
@@ -65,6 +71,7 @@ nav {
     height: 100%;
     min-height: 80px;
 }
+
 .nav-active a, .nav-inactive a {
     display: flex;
     justify-content: center;
@@ -77,17 +84,17 @@ nav {
     border-top: 3px solid #0065FC;
     border-bottom: 3px solid #FFF;
 }
-.nav-inactive a
-{
+
+.nav-inactive a {
     border-top-color: #FFF;
 }
-.nav-active p
-{
+
+.nav-active p {
     color: #0065FC;
     font-weight: 500;
 }
-.nav-inactive a:hover
-{
+
+.nav-inactive a:hover {
     box-sizing: border-box;
     border-top: 3px solid #0065FC;
     border-bottom: 3px solid #FFF;
@@ -95,9 +102,8 @@ nav {
     font-weight: 500;
 }
 
-/*Style Main*/
-main
-{
+/*--------------------------------Style Main-------------------------------*/
+main {
     display: flex;
     width: 93%;
     max-width: 1785px;
@@ -105,18 +111,18 @@ main
     align-items: flex-start;
     font-size: 100%;
 }
-main > h2
-{
+
+main > h2 {
     font-size: 150%;
     font-weight: bold;
     margin-bottom: 0.5%;
 }
-main > p
-{
+
+main > p {
     font-size: 110%;
 }
-main > form
-{
+
+main > form {
     display: flex;
     width: 30%;
     max-width: 550px;
@@ -124,10 +130,9 @@ main > form
     align-items: center;
     margin: 1% 0;
     font-size: 120%;
-    
 }
-main > form :nth-child(1)
-{
+
+main > form :nth-child(1) {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -160,7 +165,6 @@ form input::placeholder {
     font-size: 100%;
 }
 
-
 form :nth-child(3) {
     height: 3vw;
     flex-grow: 0;
@@ -174,17 +178,19 @@ form :nth-child(3) {
     background-color: #0065FC;
     border: 3px solid #0065FC;
 }
+
 form :nth-child(3):hover {
     background-color: #DEEBFF;
     border-color: #DEEBFF;
     color: #0065FC;
     cursor: pointer;
 }
+
 form :nth-child(4) {
     background-color: #0065FC;
 }
 
-/*Section Filter */
+/*----------------------------------Section Filter--------------------------*/
 .filters-general {
     display: flex;
     justify-content: flex-start;
@@ -194,15 +200,18 @@ form :nth-child(4) {
     width: 100%;
     height: 100%;
 }
+
 .filters-general > h3 {
     font-size: 85%;
     margin-right: 1%;
 }
+
 .filters-button {
     display: flex;
     width: 90%;
     font-size: 120%;
 }
+
 .filters {
     display: flex;
     align-items: center;
@@ -216,6 +225,7 @@ form :nth-child(4) {
     font-size: 100%;
     height: 3vw;
 }
+
 .filters > .fas {
     display: flex;
     align-items: center;
@@ -229,6 +239,7 @@ form :nth-child(4) {
     position: relative;
     left: -2px;
 }
+
 .filters p {
     justify-content: center;
     margin: 0 1vw;
@@ -236,9 +247,11 @@ form :nth-child(4) {
     position: relative;
     left: -1px;
 }
+
 .filters:hover {
     cursor: pointer;
 }
+
 .filters:hover  .fas{
     background-color: #0065FC;
     color: #DEEBFF;
@@ -247,19 +260,12 @@ form :nth-child(4) {
 .filters:hover  p {
     color: #0065FC;
 }
-/*Proposition changement couleur icone
-.filters i:hover
-{
-    color: #FFF;
-    background-color: #0065FC;
-    border-color: #0065FC;
-}
-*/
+
 .fa-search {
     display: none;
 }
 
-/*Style Infoville */
+/*--------------------------------Style Infoville--------------------------------*/
 .info-city {
     display: flex;
     align-items: center;
@@ -276,9 +282,9 @@ form :nth-child(4) {
 .info-city p {
     font-size: 100%
 }
-/*Style section hébergements populaire*/
-.container-lodging-popular
-{
+
+/*----------------------------------Style section hébergements populaire------------------------*/
+.container-lodging-popular {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -286,14 +292,12 @@ form :nth-child(4) {
     margin: 1% 0%;
     gap: 2%;
 }
-.money, .cheapest
-{
+.money, .cheapest {
     font-weight: bold;
 }
 
-/*Style hebergements*/
-#lodging
-{
+/*----------------------------------Style hebergements-------------------------------*/
+#lodging {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -305,8 +309,8 @@ form :nth-child(4) {
     border-radius: 25px;
     row-gap: 5px;
 }
-#lodging > header > h2
-{
+
+#lodging > header > h2 {
     display: flex;
     align-items: center;
     height: 40px;
@@ -314,8 +318,8 @@ form :nth-child(4) {
     font-weight: bold;
     margin-bottom: 1%;
 }
-#lodging > div
-{
+
+#lodging > div {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -324,8 +328,8 @@ form :nth-child(4) {
     row-gap: 4%;
     height: auto;
 }
-.lodging-block1, .lodging-block2
-{
+
+.lodging-block1, .lodging-block2 {
     display: flex;
     justify-content: space-between;
     column-gap: 5%;
@@ -333,16 +337,15 @@ form :nth-child(4) {
     height: 48%;
 }
 
-.card-lodging
-{
+.card-lodging {
     background-color: #FFF;
     width: 18vw;
     max-width: 308px;
     height: 14vw;
     border-radius: 25px;
 }
-.card-lodging a
-{
+
+.card-lodging a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -350,14 +353,14 @@ form :nth-child(4) {
     width: 100%;
     height: 100%;
 }
-.img-lodging
-{
+
+.img-lodging {
     box-sizing: border-box;
     width: 100%;
     height: 60%;
 }
-.img-lodging > img
-{
+
+.img-lodging > img {
     box-sizing: border-box;
     width: 100%;
     height: 100%;
@@ -367,8 +370,8 @@ form :nth-child(4) {
     border-top-right-radius: 25px;
     border-bottom: none;
 }
-.info-lodging
-{
+
+.info-lodging {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -377,31 +380,31 @@ form :nth-child(4) {
     height: 40%;
     padding: 5% 6%;
 }
-.info-lodging > h3
-{
+
+.info-lodging > h3 {
     width: 100%;
     font-size: 110%;
     font-weight: bold;
 }
+
 .info-lodging > p {
     font-size: 100%;
 }
-#lodging > form > input
-{
+
+#lodging > form > input {
     font-size: 110%;
     font-weight: bold;
     border: none;
     background-color: #F2F2F2;
     margin-top: 3%;
 }
-#lodging > form > input:hover
-{
+
+#lodging > form > input:hover {
     cursor: pointer;
 }
 
-/*Style Populaire*/
-.populars
-{
+/*----------------------------------Style Populaire--------------------------*/
+.populars {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -413,8 +416,8 @@ form :nth-child(4) {
     padding: 2%;
     row-gap: 2%;
 }
-.populars > header
-{
+
+.populars > header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -423,29 +426,29 @@ form :nth-child(4) {
     align-self: flex-start;
     margin-bottom: 1%;
 }
-.populars > header > h2
-{
+
+.populars > header > h2 {
     font-size: 140%;
     font-weight: bold;
 }
-.fa-chart-line
-{
+
+.fa-chart-line {
     font-size: 150%;
 }
-.cards-popular
-{
+
+.cards-popular {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     flex-grow: 1;
 }
-.card-popular
-{
+
+.card-popular {
     width: 100%;
     height: 30%;
 }
-.card-popular a
-{
+
+.card-popular a {
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
@@ -455,8 +458,8 @@ form :nth-child(4) {
     border-radius: 25px;
     padding-right: 5px;
 }
-.img-popular
-{
+
+.img-popular {
     box-sizing: border-box;
     width: 40%;
     height: 100%;
@@ -465,8 +468,8 @@ form :nth-child(4) {
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
 }
-.info-popular
-{
+
+.info-popular {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -475,15 +478,15 @@ form :nth-child(4) {
     height: 100%;
     padding: 4%;
 }
-.text-popular
-{
+
+.text-popular {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 60%;
 }
-.text-popular > h3
-{
+
+.text-popular > h3 {
     font-size: 110%;
     font-weight: bold;
 }
@@ -492,29 +495,28 @@ form :nth-child(4) {
     font-size: 100%;
 }
 
-/*Style Activités*/
-#activities
-{
+/*-----------------------------------------------Style Activités-----------------------------------*/
+#activities {
     display: flex;
     flex-direction: column;
     width: 100%;
     margin: 2% 0;
 }
-#activities > header
-{
+
+#activities > header {
     font-size: 140%;
     font-weight: bold;
     margin: 2% 0;
 }
-.activities
-{
+
+.activities {
     display: flex;
     justify-content: space-between;
     width: 100%;
     height: 24vw;
 }
-.activities h3
-{
+
+.activities h3 {
     display: flex;
     box-sizing: border-box;
     font-size: 120%;
@@ -522,8 +524,8 @@ form :nth-child(4) {
     padding: 7%;
     width: 100%;
 }
-.link-activities
-{
+
+.link-activities {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -532,15 +534,15 @@ form :nth-child(4) {
     height: 100%;
     border-radius: 25px;
 }
-.solo-activity
-{
+
+.solo-activity {
     width: 23%;
     height: 100%;
     border-radius: 25px;
     box-shadow: -5px -5px 10px #F2F2F2, 5px 5px 10px #F2F2F2;
 }
-.solo-activity img
-{
+
+.solo-activity img {
     width: 100%;
     height: 84%;
     border-top-left-radius: 25px;
@@ -548,23 +550,23 @@ form :nth-child(4) {
     object-fit: cover;
     z-index: 1;
 }
-.duo
-{
+
+.duo {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 23%;
     height: 100%;
 }
-.fort
-{
+
+.fort {
     height: 52%;
     width: 100%;
     border-radius: 25px;
     box-shadow: -5px -5px 10px #F2F2F2, 5px 5px 10px #F2F2F2;
 }
-.fort img
-{
+
+.fort img {
     width: 100%;
     height: 68%;
     object-fit: cover;
@@ -573,30 +575,30 @@ form :nth-child(4) {
     border-top-right-radius: 25px;
     z-index: 1;
 }
-.frioul
-{
+
+.frioul {
     width: 100%;
     height: 37%;
     border-radius: 25px;
     box-shadow: -5px -5px 10px #F2F2F2, 5px 5px 10px #F2F2F2;
 }
-.frioul img
-{
+
+.frioul img {
     width: 100%;
     height: 55%;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     object-fit: cover;
 }
-.dame
-{
+
+.dame {
     width: 100%;
     height: 43%;
     border-radius: 25px;
     box-shadow: -5px -5px 10px #F2F2F2, 5px 5px 10px #F2F2F2;
 }
-.dame img
-{
+
+.dame img {
     width: 100%;
     height: 61%;
     border-top-left-radius: 25px;
@@ -604,15 +606,15 @@ form :nth-child(4) {
     object-fit: cover;
     object-position: top;
 }
-.parc
-{
+
+.parc {
     width: 100%;
     height: 45%;
     border-radius: 25px;
     box-shadow: -5px -5px 10px #F2F2F2, 5px 5px 10px #F2F2F2;
 }
-.parc img
-{
+
+.parc img {
    width: 100%;
    height: 63%;
    border-top-left-radius: 25px;
@@ -621,87 +623,81 @@ form :nth-child(4) {
    object-position: center;
 }
 
-/*Style Footer*/
-footer
-{
+/*-------------------------------------------Style Footer---------------------------------------*/
+footer {
     display: flex;
     width: 100%;
     background-color: #F2F2F2;
     justify-content: center;
     margin-top: 2%;
 }
-footer > div
-{
+
+footer > div {
     display: flex;
     justify-content: space-between;
     width: 93%;
     max-width: 1785px;
     padding: 2% 0%;
 }
-.menu-footer
-{
+
+.menu-footer {
     width: 33%;
     padding: 1% 0;
 }
-.menu-footer > h4
-{
+
+.menu-footer > h4 {
     font-size: 100%;
     font-weight: bold;
     padding-bottom: 2%;
 }
-.menu-footer > p
-{
+
+.menu-footer > p {
     padding: 1% 0;
 }
 
 /*Hover Cards */
-
-.card-lodging:hover, .card-popular:hover, .solo-activity:hover, .fort:hover, .frioul:hover, .dame:hover, .parc:hover, .filters:hover
-{
+.card-lodging:hover, .card-popular:hover, .solo-activity:hover, .fort:hover, .frioul:hover, .dame:hover, .parc:hover, .filters:hover {
     transform: scale(1.1);
     transition: 0.5s;
     z-index: 2;
 }
-
 
 /*--------------------------------- Version Téléphone Iphone 8 -----------------------------------------*/
 @media all and (max-width: 767px)
 {
 
     /*Style Header*/
-    body > header
-    {
+    body > header {
         width: 100%;
         flex-direction: column;
         align-items: center;
     }
-    #logo
-    {
+
+    #logo {
         width: 40%;
         transform: scale(1);
     }
-    nav
-    {
+
+    nav {
         width: 100%;
         height: 70px;
     }
-    nav > div
-    {
+
+    nav > div {
         align-items: center;
         height: 100%;
         border: none;
     }
-    nav a
-    {
+
+    nav a {
         height: 100%;
     }
-    .nav-active a
-    {
+
+    .nav-active a {
         border-top: none;
         border-bottom: 3px solid #0065FC;
     }
-    nav p
-    {
+    nav p {
         display: flex;
         align-items: center;
         height: 100%;
@@ -709,22 +705,20 @@ footer > div
         font-size: 110%;
     }
 
-    /*Style Main*/
-    main
-    {
+    /*-------------Style Main--------------------*/
+    main {
         padding: 30px 0px;
     }
-    main > *
-    {
+
+    main > * {
         margin: 10px 0;
     }
-    main > h2
-    {
+
+    main > h2 {
         font-size: x-large;
     }
 
-    main > form
-    {
+    main > form {
         box-sizing: border-box;
         margin: 15px 0px;
         width: 100%;
@@ -733,25 +727,25 @@ footer > div
         border-radius: 15px;
         margin: 20px 0;
     }
-    main > form :nth-child(1)
-    {
+
+    main > form :nth-child(1) {
         border-top-left-radius: 15px;
         border-bottom-left-radius: 15px;
     }
-    main > form :nth-child(2)
-    {
+
+    main > form :nth-child(2) {
         border: none;
         height: 100%;
         flex-grow: 1;
         padding: 0 3%;
         font-size: large;
     }
-    input[value=Rechercher]
-    {
+
+    input[value=Rechercher] {
         display: none;
     }
-    .fa-search
-    {
+
+    .fa-search {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -765,9 +759,8 @@ footer > div
         border-radius: 15px;
     }
     
-    /*Style Filters*/
-    .filters-general
-    {
+    /*-------------------------Style Filters------------------------*/
+    .filters-general {
         flex-direction: column;
         align-items: flex-start;
         row-gap: 10px;
@@ -775,12 +768,12 @@ footer > div
         width: 100%;
         margin: 15px 0;
     }
-    .filters > h3
-    {
+
+    .filters > h3 {
         width: 100%;
     }
-    .filters-button
-    {
+
+    .filters-button {
         display: flex;
         column-gap: 2%;
         flex-wrap: wrap;
@@ -788,8 +781,8 @@ footer > div
         row-gap: 10px;
 
     }
-    .filters
-    {
+
+    .filters {
         box-sizing: border-box;
         min-width: 40%;
         height: 50px;
@@ -798,69 +791,65 @@ footer > div
         transition: 0.1s;
         z-index: 1; 
     }
-    .filters:hover
-    {
+
+    .filters:hover {
         border: none;
     }
-    .filters .fas
-    {
+
+    .filters .fas {
         box-sizing: border-box;
         height: 100%;
         width: 50px;
         min-height: 50px;
     }
 
-    .filters > p
-    {
+    .filters > p {
         box-sizing: border-box;
         padding: 0 10px;
         width: 100%;
         font-size: medium;
     }
 
-
-    /*Style Info-city*/
-    .info-city
-    {
+    /*----------------------Style Info-city--------------------*/
+    .info-city {
         align-items: flex-start;
         justify-content: space-between;
     }
-    .info-city > img
-    {
+
+    .info-city > img {
         width: 9%;
         height: 9%;
         margin-right: 5%;
     }
-    .info-city > p
-    {
+
+    .info-city > p {
         padding: 1% 0;
     }
 
-    /* Section Lodging Popular */
-    .container-lodging-popular
-    {
+    /* -----------------------Section Lodging Popular-----------------------*/
+    .container-lodging-popular {
         display: flex;
         flex-direction: column-reverse;
         width: 100%;
     }
-    .populars
-    {
+
+    .populars {
         width: 100%;
         align-items: center;
     }
-    .populars > header
-    {
+
+    .populars > header {
         align-self: center;
         width: 93%;
         justify-content: space-between;
         font-size: 130%;
     }
-    .populars > header >h2, .populars > header > i
-    {
+
+    .populars > header >h2, .populars > header > i {
         font-size: 100%;
     }
-    .cards-popular
-    {
+
+    .cards-popular {
         width: 93%;
     }
 
