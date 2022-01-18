@@ -31,6 +31,7 @@ a:visited {
 body > header {
     display: flex;
     width: 93%;
+    max-width: 1785px;
     justify-content: space-between;
     box-sizing: border-box;
 }
@@ -192,7 +193,6 @@ form :nth-child(4) {
     font-size: 120%;
     font-weight: bold;
     width: 100%;
-    max-width: 1300px;
     height: 100%;
     margin: 1% 0;
 }
@@ -204,8 +204,7 @@ form :nth-child(4) {
 }
 .filters-button {
     display: flex;
-    align-items: center;
-    width: 88%;
+    width: 90%;
     font-size: 120%;
 }
 .filters {
@@ -299,11 +298,10 @@ form :nth-child(4) {
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
-    padding: 25px 2%;
+    padding: 2%;
     background-color: #F2F2F2;
     width: 66%;
-    max-width: 1170px;
-    min-height: 570px;
+    max-width: 1178px;
     border-radius: 25px;
     row-gap: 5px;
 }
@@ -312,9 +310,9 @@ form :nth-child(4) {
     display: flex;
     align-items: center;
     height: 40px;
-    font-size: 120%;
+    font-size: 140%;
     font-weight: bold;
-    margin: 1% 0;
+    margin-bottom: 1%;
 }
 #lodging > div
 {
@@ -323,14 +321,14 @@ form :nth-child(4) {
     justify-content: space-between;
     align-content: flex-start;
     width: 100%;
-    row-gap: 10px;
+    row-gap: 3%;
     height: min-content;
 }
 .lodging-block1
 {
     display: flex;
     justify-content: space-between;
-    column-gap: 5px;
+    column-gap: 5%;
     width: 100%;
     height: 100%;
 }
@@ -338,15 +336,16 @@ form :nth-child(4) {
 {
     display: flex;
     justify-content: space-between;
-    column-gap: 5px;
+    column-gap: 5%;
     width: 100%;
-    height: 50%; 
+    height: 100%; 
 }
 .card-lodging
 {
     background-color: #FFF;
-    width: 330px;
-    height: 250px;
+    width: 30%;
+    max-width: 308px;
+    height: auto;
     border-radius: 25px;
     transform: scale(1);
     transition: 0.5s;
@@ -364,15 +363,15 @@ form :nth-child(4) {
 .img-lodging
 {
     width: 100%;
-    height: 60%;
-    min-width: 160px;
+    height: auto;
+    max-height: 150px;
     min-height: 77px;
 }
 .img-lodging > img
 {
     box-sizing: border-box;
     width: 100%;
-    height: 100%;
+    max-height: 150px;
     object-fit: cover;
     border: 6px solid #FFF;
     border-top-left-radius: 25px;
@@ -419,8 +418,8 @@ form :nth-child(4) {
     border-radius: 25px;
     background-color: #F2F2F2;
     width: 30%;
-    min-width: 320px;
-    padding: 25px 2%;
+    max-width: 536px;
+    padding: 2%;
     row-gap: 10px;
 }
 .populars > header
@@ -431,11 +430,11 @@ form :nth-child(4) {
     width: 100%;
     height: 40px;
     align-self: flex-start;
-    margin: 2% 0;
+    margin-bottom: 1%;
 }
 .populars > header > h2
 {
-    font-size: 120%;
+    font-size: 140%;
     font-weight: bold;
 }
 .fa-chart-line
