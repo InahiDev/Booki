@@ -9,7 +9,7 @@ body {
     flex-direction: column;
     align-items: center;
     font-family: Raleway, sans-serif;
-    font-size: 1.5vw;
+    font-size: 1vw;
 }
 
 a {
@@ -55,7 +55,6 @@ nav {
     justify-content: center;
     width: 24%;
     min-width: 260px;
-    height: inherit;
 }
 .nav-active, .nav-inactive {
     display: flex;
@@ -71,14 +70,15 @@ nav {
     align-items: center;
     width: 100%;
     height: 100%;
-    font-size: 80%;
+    font-size: 100%;
     font-weight: 200;
-}
-.nav-active a
-{
     box-sizing: border-box;
     border-top: 3px solid #0065FC;
     border-bottom: 3px solid #FFF;
+}
+.nav-inactive a
+{
+    border-top-color: #FFF;
 }
 .nav-active p
 {
@@ -99,29 +99,30 @@ main
 {
     display: flex;
     width: 93%;
+    max-width: 1785px;
     flex-direction: column;
     align-items: flex-start;
     font-size: 100%;
 }
 main > h2
 {
-    font-size: 110%;
+    font-size: 150%;
     font-weight: bold;
 }
 main > p
 {
-    font-size: 88%;
+    font-size: 110%;
     margin: 10px 0%;
 }
 main > form
 {
     display: flex;
-    width: 40%;
-    max-width: 635px;
+    width: 30%;
+    max-width: 550px;
     min-height: 50px;
     align-items: center;
     margin: 1% 0;
-    font-size: 100%;
+    font-size: 120%;
     
 }
 main > form :nth-child(1)
@@ -130,23 +131,21 @@ main > form :nth-child(1)
     justify-content: center;
     align-items: center;
     flex-grow: 0;
-    box-sizing: border-box;
-    object-fit: fill;
-    padding: 4% 5%;
-    font-size: 95%;
+    width: 20vw;
+    height: 3vw;
+    font-size: 100%;
     background-color: #F2F2F2;
     border-top-left-radius: 25% 30%;
     border-bottom-left-radius: 25% 30%;
-    border: 1px solid #F2F2F2;
 }
 
 form :nth-child(2) {
     display: flex;
-    height: initial;
+    height: 3vw;
     box-sizing: border-box;
-    padding: 3%;
+    padding: 0 4%;
     flex-grow: 1;
-    font-size: 100%;
+    font-size: 85%;
     font-weight: bold;
     border: 1px solid #F2F2F2;
     border-width: 3px 0;
@@ -160,19 +159,26 @@ form input::placeholder {
     font-size: 100%;
 }
 
+form input:hover {
+    color: #0065FC
+}
 form :nth-child(3) {
-    height: 100%;
+    height: 3vw;
     flex-grow: 0;
     box-sizing: border-box;
-    padding: 3%;
+    padding: 0 5%;
     border: 2px solid #0065FC;
-    border-top-right-radius: 15% 33%;
-    border-bottom-right-radius: 15% 33%;
+    border-top-right-radius: 10% 33%;
+    border-bottom-right-radius: 10% 33%;
     color: #FFF;
-    font-size: 100%;
-    font-weight: bold;
+    font-size: 85%;
     background-color: #0065FC;
     border: 3px solid #0065FC;
+}
+form :nth-child(3):hover {
+    background-color: #DEEBFF;
+    border-color: #DEEBFF;
+    color: #0065FC;
 }
 form :nth-child(4) {
     background-color: #0065FC;
@@ -183,7 +189,7 @@ form :nth-child(4) {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    font-size: 100%;
+    font-size: 120%;
     font-weight: bold;
     width: 100%;
     max-width: 1300px;
@@ -200,20 +206,21 @@ form :nth-child(4) {
     display: flex;
     align-items: center;
     width: 88%;
-    font-size: 100%;
+    font-size: 120%;
 }
 .filters {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     font-size: 100%;
+    box-sizing: border-box;
     border: 3px solid #F2F2F2;
     border-left: 0px;
-    margin: 0 2%;
+    margin: 0 1%;
     border-radius: 1.5vw / 50%;
     font-size: 100%;
     height: 3vw;
-    box-sizing: border-box;
+    padding-right: 25px;
 }
 .filters > .fas {
     display: flex;
@@ -230,18 +237,17 @@ form :nth-child(4) {
 }
 .filters p {
     justify-content: center;
-    margin: 0 9px;
+    margin-left: 20px;
     font-size: 80%;
-    position: relative;
-    left: -2px;
-    padding: 0 0.5vw;
 }
-.filters-general .filters:hover {
+.filters:hover  .fas{
     background-color: #0065FC;
-    border-color: #DEEBFF;
-    color: #FFF;
+    color: #DEEBFF;
 }
 
+.filters:hover  p {
+    color: #0065FC;
+}
 /*Proposition changement couleur icone
 .filters i:hover
 {
@@ -250,25 +256,27 @@ form :nth-child(4) {
     border-color: #0065FC;
 }
 */
-.fa-search
-{
+.fa-search {
     display: none;
 }
+
 /*Style Infoville */
-.info-city
-{
+.info-city {
     display: flex;
     align-items: center;
     width: 100%;
     margin: 1% 0;
 }
-.info-city > img
-{
-    height: 33px;
-    width: 33px;
+
+.info-city > img {
+    width: 2%;
+    height: auto;
     margin-right: 1%;
 }
 
+.info-city p {
+    font-size: 100%
+}
 /*Style section hébergements populaire*/
 .container-lodging-popular
 {
@@ -294,7 +302,7 @@ form :nth-child(4) {
     padding: 25px 2%;
     background-color: #F2F2F2;
     width: 66%;
-    min-width: 609px;
+    max-width: 1170px;
     min-height: 570px;
     border-radius: 25px;
     row-gap: 5px;
@@ -729,7 +737,6 @@ footer > div
         display: flex;
         align-items: center;
         height: 100%;
-        min-height: none;
         border: none;
         font-size: 110%;
     }
@@ -820,7 +827,7 @@ footer > div
         height: 50px;
         border: 3px solid #F2F2F2;
         transform: none;
-        transition: 0;
+        transition: 0.1s;
         z-index: 1; 
     }
     .filters:hover
