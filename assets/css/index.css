@@ -160,9 +160,7 @@ form input::placeholder {
     font-size: 100%;
 }
 
-main > form input:hover {
-    color: #0065FC;
-}
+
 form :nth-child(3) {
     height: 3vw;
     flex-grow: 0;
@@ -237,6 +235,9 @@ form :nth-child(4) {
     font-size: 80%;
     position: relative;
     left: -1px;
+}
+.filters:hover {
+    cursor: pointer;
 }
 .filters:hover  .fas{
     background-color: #0065FC;
@@ -339,9 +340,6 @@ form :nth-child(4) {
     max-width: 308px;
     height: 14vw;
     border-radius: 25px;
-    transform: scale(1);
-    transition: 0.5s;
-    z-index: 1;
 }
 .card-lodging a
 {
@@ -445,9 +443,6 @@ form :nth-child(4) {
 {
     width: 100%;
     height: 30%;
-    transform: scale(1);
-    transition: 0.5s;
-    z-index: 1;
 }
 .card-popular a
 {
@@ -524,16 +519,15 @@ form :nth-child(4) {
     box-sizing: border-box;
     font-size: 120%;
     font-weight: bold;
-    padding: 10% 8%;
+    padding: 7%;
     width: 100%;
-    height: 4vw;
-    align-items: center;
-    z-index: 2;
 }
 .link-activities
 {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
     width: 100%;
     height: 100%;
     border-radius: 25px;
@@ -544,9 +538,6 @@ form :nth-child(4) {
     height: 100%;
     border-radius: 25px;
     box-shadow: -5px -5px 10px #F2F2F2, 5px 5px 10px #F2F2F2;
-    transform: scale(1);
-    transition: 0.5s;
-    z-index: 1;
 }
 .solo-activity img
 {
@@ -571,9 +562,6 @@ form :nth-child(4) {
     width: 100%;
     border-radius: 25px;
     box-shadow: -5px -5px 10px #F2F2F2, 5px 5px 10px #F2F2F2;
-    transform: scale(1);
-    transition: 0.5s;
-    z-index: 1;
 }
 .fort img
 {
@@ -591,18 +579,14 @@ form :nth-child(4) {
     height: 37%;
     border-radius: 25px;
     box-shadow: -5px -5px 10px #F2F2F2, 5px 5px 10px #F2F2F2;
-    transform: scale(1);
-    transition: 0.5s;
-    z-index: 1;
 }
 .frioul img
 {
     width: 100%;
     height: 55%;
-    object-fit: cover;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
-    z-index: 1;
+    object-fit: cover;
 }
 .dame
 {
@@ -610,9 +594,6 @@ form :nth-child(4) {
     height: 43%;
     border-radius: 25px;
     box-shadow: -5px -5px 10px #F2F2F2, 5px 5px 10px #F2F2F2;
-    transform: scale(1);
-    transition: 0.5s;
-    z-index: 1;
 }
 .dame img
 {
@@ -621,7 +602,7 @@ form :nth-child(4) {
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     object-fit: cover;
-    z-index: 1;
+    object-position: top;
 }
 .parc
 {
@@ -629,9 +610,6 @@ form :nth-child(4) {
     height: 45%;
     border-radius: 25px;
     box-shadow: -5px -5px 10px #F2F2F2, 5px 5px 10px #F2F2F2;
-    transform: scale(1);
-    transition: 0.5s;
-    z-index: 1;
 }
 .parc img
 {
@@ -640,7 +618,7 @@ form :nth-child(4) {
    border-top-left-radius: 25px;
    border-top-right-radius: 25px;
    object-fit: cover;
-   z-index: 1;
+   object-position: center;
 }
 
 /*Style Footer*/
@@ -684,6 +662,7 @@ footer > div
     transition: 0.5s;
     z-index: 2;
 }
+
 
 /*--------------------------------- Version Téléphone Iphone 8 -----------------------------------------*/
 @media all and (max-width: 767px)
