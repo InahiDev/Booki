@@ -34,8 +34,7 @@ body > header {
     justify-content: space-between;
     box-sizing: border-box;
 }
-#logo
-{
+#logo {
     display: flex;
     align-self: center;
     box-sizing: border-box;
@@ -44,24 +43,21 @@ body > header {
     min-width: 67px;
     min-height: 41px;
 }
-#logo img
-{
+#logo img {
     box-sizing: border-box;
     width: 100%;
     height: 100%;
     object-fit: contain;
     padding: 20% 0;
 }
-nav
-{
+nav {
     display: flex;
     justify-content: center;
     width: 24%;
     min-width: 260px;
     height: inherit;
 }
-.nav-active, .nav-inactive
-{
+.nav-active, .nav-inactive {
     display: flex;
     flex-grow: 1;
     width: 50%;
@@ -69,8 +65,7 @@ nav
     height: 100%;
     min-height: 80px;
 }
-.nav-active a, .nav-inactive a
-{
+.nav-active a, .nav-inactive a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -106,6 +101,7 @@ main
     width: 93%;
     flex-direction: column;
     align-items: flex-start;
+    font-size: 100%;
 }
 main > h2
 {
@@ -120,11 +116,13 @@ main > p
 main > form
 {
     display: flex;
+    width: 40%;
     max-width: 635px;
-    width: 31%;
-    height: auto;
+    min-height: 50px;
     align-items: center;
     margin: 1% 0;
+    font-size: 100%;
+    
 }
 main > form :nth-child(1)
 {
@@ -132,101 +130,118 @@ main > form :nth-child(1)
     justify-content: center;
     align-items: center;
     flex-grow: 0;
-    padding: 4%;
+    box-sizing: border-box;
+    object-fit: fill;
+    padding: 4% 5%;
+    font-size: 95%;
     background-color: #F2F2F2;
     border-top-left-radius: 25% 30%;
     border-bottom-left-radius: 25% 30%;
-}
-.fa-map-marker-alt
-{
-    font-size: 80%;
+    border: 1px solid #F2F2F2;
 }
 
 form :nth-child(2) {
     display: flex;
+    height: initial;
+    box-sizing: border-box;
     padding: 3%;
     flex-grow: 1;
-    font-size: 90%;
+    font-size: 100%;
     font-weight: bold;
-    padding-left: 1%;
     border: 1px solid #F2F2F2;
+    border-width: 3px 0;
     overflow: hidden;
+    outline: none;
 }
 
 form input::placeholder {
     opacity: 1;
     font-weight: bold;
-    font-size: 105%;
+    font-size: 100%;
 }
 
-#city
-{
-    box-sizing: border-box;
-    outline: none;
-}
-form :nth-child(3)
-{
-    display: flex;
-    align-items: center;
-    flex-grow: 0;
-    padding: 3% 3%;
-    border: 2px solid #0065FC;
-    border-top-right-radius: 12% 25%;
-    border-bottom-right-radius: 12% 25%;
-    color: #FFF;
-    font-size: 80%;
+form :nth-child(3) {
     height: 100%;
+    flex-grow: 0;
+    box-sizing: border-box;
+    padding: 3%;
+    border: 2px solid #0065FC;
+    border-top-right-radius: 15% 33%;
+    border-bottom-right-radius: 15% 33%;
+    color: #FFF;
+    font-size: 100%;
     font-weight: bold;
     background-color: #0065FC;
+    border: 3px solid #0065FC;
 }
-form :nth-child(4)
-{
+form :nth-child(4) {
     background-color: #0065FC;
 }
 
 /*Section Filter */
-.filters-general
-{
+.filters-general {
     display: flex;
+    justify-content: flex-start;
     align-items: center;
+    font-size: 100%;
     font-weight: bold;
     width: 100%;
-    height: 50px;
+    max-width: 1300px;
+    height: 100%;
     margin: 1% 0;
 }
-.filters-general > h3
-{
-    font-size: large;
-    margin-right: 2%;
+.filters-general > h3 {
+    font-size: 85%;
+    margin-right: 1%;
     min-width: 55px;
 
 }
-.filters-button
-{
+.filters-button {
     display: flex;
     align-items: center;
-    height: 100%;
+    width: 88%;
+    font-size: 100%;
 }
-.filters
-{
+.filters {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    font-size: large;
+    justify-content: space-around;
+    font-size: 100%;
     border: 3px solid #F2F2F2;
     border-left: 0px;
-    height: 100%;
-    margin: 0% 1%;
-    border-radius: 25px;
-    padding-right: 1%;
+    margin: 0 2%;
+    border-radius: 1.5vw / 50%;
+    font-size: 100%;
+    height: 3vw;
+    box-sizing: border-box;
 }
-.filters-general .filters:hover
-{
-   
+.filters > .fas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3vw;
+    width: 3vw;
+    font-size: 70%;
+    border-radius: 50%;
+    color: #0065FC;
+    background-color: #DEEBFF;
+    position: relative;
+    left: -1px;
+}
+.filters p {
+    justify-content: center;
+    margin: 0 9px;
+    font-size: 80%;
+    position: relative;
+    left: -2px;
+    padding: 0 0.5vw;
+}
+.filters-general .filters:hover {
     background-color: #0065FC;
     border-color: #DEEBFF;
     color: #FFF;
 }
+
 /*Proposition changement couleur icone
 .filters i:hover
 {
@@ -235,29 +250,6 @@ form :nth-child(4)
     border-color: #0065FC;
 }
 */
-.filters p
-{
-    justify-content: center;
-    padding: 0 15px 0 5px;
-}
-.dogs
-{
-    min-width: 159px;
-}
-.fa-money-bill-wave, .fa-child, .fa-dog, .fa-heart
-{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 100%;
-    min-width: 50px;
-    border: 3px solid #DEEBFF;
-    border-radius: 50%;
-    color: #0065FC;
-    background-color: #DEEBFF;
-    position: relative;
-    left: -5px;
-}
 .fa-search
 {
     display: none;
@@ -312,7 +304,7 @@ form :nth-child(4)
     display: flex;
     align-items: center;
     height: 40px;
-    font-size: xx-large;
+    font-size: 120%;
     font-weight: bold;
     margin: 1% 0;
 }
@@ -435,12 +427,12 @@ form :nth-child(4)
 }
 .populars > header > h2
 {
-    font-size: xx-large;
+    font-size: 120%;
     font-weight: bold;
 }
 .fa-chart-line
 {
-    font-size: x-large;
+    font-size: 140%;
 }
 .cards-popular
 {
