@@ -41,17 +41,9 @@ body > header
 {
     display: flex;
     align-self: center;
-<<<<<<< Updated upstream
-    box-sizing: border-box;
-    width: 10%;
-    height: 100%;
-    min-width: 67px;
-    min-height: 41px;
-=======
     width: 125px;
     height: auto;
     padding: 30px 0;
->>>>>>> Stashed changes
 }
 #logo img
 {
@@ -64,13 +56,7 @@ nav
 {
     display: flex;
     justify-content: center;
-<<<<<<< Updated upstream
-    width: 24%;
-    min-width: 260px;
-    height: inherit;
-=======
     width: 300px;
->>>>>>> Stashed changes
 }
 .nav-active, .nav-inactive
 {
@@ -84,16 +70,8 @@ nav
     align-items: center;
     width: 100%;
     height: 100%;
-<<<<<<< Updated upstream
-    font-size: 110%;
-    font-weight: 200;
-}
-.nav-active a
-{
-=======
     font-size: 90%;
     font-weight: 400;
->>>>>>> Stashed changes
     box-sizing: border-box;
     border-top: 3px solid #0065FC;
     border-bottom: 3px solid #FFF;
@@ -112,6 +90,9 @@ nav
     font-weight: 500;
 }
 
+.nav-inactive a {
+    border-top-color: #FFF;
+}
 /*Style Main*/
 main
 {
@@ -120,17 +101,6 @@ main
     flex-direction: column;
     align-items: flex-start;
 }
-<<<<<<< Updated upstream
-main > h2
-{
-    font-size: xx-large;
-    font-weight: bold;
-}
-main > p
-{
-    font-size: large;
-    margin: 10px 0%;
-=======
 
 main > h2 {
     font-size: 125%;
@@ -141,21 +111,13 @@ main > p {
     font-size: 90%;
     font-weight: 500;
     margin: 1% 0;
->>>>>>> Stashed changes
 }
 main > form
 {
     display: flex;
-<<<<<<< Updated upstream
-    width: 31%;
-    min-width: 185px;
-    align-items: center;
-    margin: 1% 0;
-=======
     width: 32%;
     align-items: center;
     margin: 10px 0;
->>>>>>> Stashed changes
 }
 main > form :nth-child(1)
 {
@@ -165,23 +127,6 @@ main > form :nth-child(1)
     box-sizing: border-box;
     width: 50px;
     height: 50px;
-<<<<<<< Updated upstream
-    background-color: #F2F2F2;
-    border: 1px solid #F2F2F2;
-    border-left: 0px;
-    border-top-left-radius: 25% 23%;
-    border-bottom-left-radius: 25% 23%;
-}
-.fa-map-marker-alt
-{
-    font-size: 120%;
-}
-form :nth-child(2)
-{
-    box-sizing: border-box;
-    height: 50px;
-    justify-content: left;
-=======
     padding: 16px;
     font-size: 100%;
     background-color: #F2F2F2;
@@ -194,31 +139,11 @@ form :nth-child(2) {
     height: 50px;
     padding: 0 4%;
     font-size: 115%;
->>>>>>> Stashed changes
     font-weight: bold;
     padding-left: 1%;
     border: 1px solid #F2F2F2;
     overflow: hidden;
 }
-<<<<<<< Updated upstream
-#city
-{
-    box-sizing: border-box;
-    outline: none;
-}
-form :nth-child(3)
-{
-    display: flex;
-    align-items: center;
-    box-sizing: border-box;
-    height: 50px;
-    border: 1px solid #0065FC;
-    border-top-right-radius: 15% 30%;
-    border-bottom-right-radius: 15% 30%;
-    color: #FFF;
-    font-size: large;
-    font-weight: bold;
-=======
 
 form input::placeholder {
     opacity: 1;
@@ -234,15 +159,9 @@ form :nth-child(3) {
     color: #FFF;
     font-size: 85%;
     font-weight: 500;
->>>>>>> Stashed changes
     background-color: #0065FC;
-    padding: 0 3%;
+    border: 3px solid #0065FC;
 }
-<<<<<<< Updated upstream
-form :nth-child(4)
-{
-    background-color: #0065FC;
-=======
 
 form :nth-child(3):hover {
     background-color: #DEEBFF;
@@ -253,20 +172,12 @@ form :nth-child(3):hover {
 
 .form :nth-child(4) {
     display: none;
->>>>>>> Stashed changes
 }
 
 /*Section Filter */
 .filters-general
 {
     display: flex;
-<<<<<<< Updated upstream
-    align-items: center;
-    font-weight: bold;
-    width: 100%;
-    height: 50px;
-    margin: 1% 0;
-=======
     justify-content: flex-start;
     align-items: baseline;
     width: 100%;
@@ -277,39 +188,24 @@ form :nth-child(3):hover {
 .filters-general > h3 {
     font-size: 105%;
     margin-right: 20px;
->>>>>>> Stashed changes
 }
 .filters-general > h3
 {
     font-size: large;
     margin-right: 2%;
     min-width: 55px;
+}
 
-<<<<<<< Updated upstream
-=======
 .filters-button {
     display: flex;
     flex-wrap: wrap;
     flex-grow: 1;
->>>>>>> Stashed changes
 }
 .filters-general div
 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-<<<<<<< Updated upstream
-    font-size: large;
-    border: 3px solid #F2F2F2;
-    border-left: 0px;
-    height: 100%;
-    margin: 0% 1%;
-    border-radius: 25px;
-    padding-right: 1%;
-    transform: scale(1);
-    transition: 0.5s;
-    z-index: 1;
-=======
     box-sizing: border-box;
     height: 46px;
     border: 3px solid #F2F2F2;
@@ -317,7 +213,6 @@ form :nth-child(3):hover {
     margin: 0 1%;
     font-size: 130%;
     border-radius: 23px;
->>>>>>> Stashed changes
 }
 .filters-general div:hover
 {
@@ -326,14 +221,7 @@ form :nth-child(3):hover {
     border-color: #DEEBFF;
     color: #FFF;
 }
-/*Proposition changement couleur icone
-.filters i:hover
-{
-    color: #FFF;
-    background-color: #0065FC;
-    border-color: #0065FC;
-}
-*/
+
 .filters p
 {
     justify-content: center;
@@ -347,17 +235,6 @@ form :nth-child(3):hover {
 {
     display: flex;
     align-items: center;
-<<<<<<< Updated upstream
-    justify-content: space-around;
-    height: 100%;
-    min-width: 50px;
-    border: 3px solid #DEEBFF;
-    border-radius: 50%;
-    color: #0065FC;
-    background-color: #DEEBFF;
-    position: relative;
-    left: -5px;
-=======
     justify-content: center;
     height: 46px;
     width: 46px;
@@ -373,7 +250,6 @@ form :nth-child(3):hover {
     font-size: 80%;
     position: relative;
     left: -1px;
->>>>>>> Stashed changes
 }
 .fa-search
 {
