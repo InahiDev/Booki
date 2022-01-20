@@ -859,12 +859,13 @@ footer > div {
     /*----------------------Style Info-city--------------------*/
     .info-city {
         width: 93%;
+        height: 100%;
         justify-content: space-around;
         align-items: center;
+
     }
 
     .info-city > img {
-        align-self: baseline;
         width: 7%;
         height: 7%;
         margin-right: 3%;
@@ -873,7 +874,7 @@ footer > div {
 
     .info-city > p {
         width: 90%;
-        margin: 3% 0;
+        margin: 2% 0;
         padding: 0;
     }
 
@@ -882,6 +883,7 @@ footer > div {
         display: flex;
         flex-direction: column-reverse;
         width: 100%;
+
     }
 
     .populars {
