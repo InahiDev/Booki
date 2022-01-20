@@ -42,9 +42,9 @@ body > header {
 #logo {
     display: flex;
     align-self: center;
-    width: 125px;
+    width: 7%;
     height: auto;
-    padding: 30px 0;
+    padding: 3% 0;
 }
 
 #logo img {
@@ -56,8 +56,8 @@ body > header {
 
 nav {
     display: flex;
-    justify-content: center;
-    width: 300px;
+    align-items: flex-start;
+    width: 28%;
 }
 
 .nav-active, .nav-inactive {
@@ -70,27 +70,34 @@ nav {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100%;
-    font-size: 90%;
     font-weight: 400;
-    box-sizing: border-box;
-    border-top: 3px solid #0065FC;
-    border-bottom: 3px solid #FFF;
-}
-
-.nav-inactive a {
-    border-top-color: #FFF;
 }
 
 .nav-active p {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20% 0;
+    border-top: 3px solid #0065FC;
+    border-bottom: 3px solid #FFF;
     color: #0065FC;
     font-weight: 500;
 }
 
-.nav-inactive a:hover {
+.nav-inactive p {
+    display: flex;
+    justify-content: center;
     box-sizing: border-box;
-    border-top: 3px solid #0065FC;
+    width: 100%;
+    padding: 20% 0;
+    border-top: 3px solid #FFF;
     border-bottom: 3px solid #FFF;
+    font-weight: 400;
+}
+
+.nav-inactive a:hover > p {
+    border-top-color: #0065FC;
     color: #0065FC;
     font-weight: 500;
 }
