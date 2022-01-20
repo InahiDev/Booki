@@ -164,6 +164,7 @@ form :nth-child(2) {
 
 form input::placeholder {
     opacity: 1;
+    color: black;
     font-weight: bold;
     font-size: 100%;
 }
