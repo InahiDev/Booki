@@ -676,6 +676,10 @@ footer > div {
 /*--------------------------------- Version Téléphone Iphone 8 -----------------------------------------*/
 @media all and (max-width: 767px)
 {
+    /*-----------------Style Général------------------------*/
+    body {
+        font-size: min(20px, 4vw);
+    }
 
     /*Style Header*/
     body > header {
@@ -685,17 +689,23 @@ footer > div {
     }
 
     #logo {
-        width: 40%;
+        width: 30%;
+        height: auto;
         transform: scale(1);
     }
 
+    #logo img {
+        padding-bottom: 10%;
+
+    }
     nav {
         width: 100%;
-        height: 70px;
+        height: min(18vw, 70px);
     }
 
     nav > div {
         align-items: center;
+        width: 50%;
         height: 100%;
         border: none;
     }
@@ -708,38 +718,61 @@ footer > div {
         border-top: none;
         border-bottom: 3px solid #0065FC;
     }
+
+    .nav-inactive a {
+        border-bottom: 3px solid #F2F2F2;
+    }
+    
+    .nav-inactive a:hover {
+        border-top-color: #FFF;
+        border-bottom-color: #0065FC;
+    }
     nav p {
         display: flex;
         align-items: center;
         height: 100%;
-        border: none;
         font-size: 110%;
     }
 
     /*-------------Style Main--------------------*/
     main {
-        padding: 30px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 0px;
+        width: 100%;
     }
 
     main > * {
         margin: 10px 0;
+        width: 93%;
+    }
+
+    .container-lodging-popular {
+        width: 100%;
     }
 
     main > h2 {
-        font-size: x-large;
+        font-size: 153%;
     }
 
     main > form {
         box-sizing: border-box;
         margin: 15px 0px;
-        width: 100%;
-        height: 50px;
+        width: 93%;
+        max-width: 757px;
+        height: 55px;
         border: 1px solid #F2F2F2;
         border-radius: 15px;
         margin: 20px 0;
     }
 
     main > form :nth-child(1) {
+        box-sizing: border-box;
+        padding: 18px;
+        height: 100%;
+        max-width: 60px;
+        font-size: 16px;
         border-top-left-radius: 15px;
         border-bottom-left-radius: 15px;
     }
@@ -748,11 +781,15 @@ footer > div {
         border: none;
         height: 100%;
         flex-grow: 1;
-        padding: 0 3%;
-        font-size: large;
+        padding-left: 5%;
+        font-size: 20px;
     }
 
-    input[value=Rechercher] {
+    main > form :nth-child(2)::placeholder {
+        color: black;
+    }
+
+    button[value=Rechercher] {
         display: none;
     }
 
@@ -762,9 +799,9 @@ footer > div {
         align-items: center;
         box-sizing: border-box;
         border: none;
-        width: 50px;
-        height: 50px;
-        font-size: large;
+        padding: max(3%, 20px);
+        font-size: 13px;
+        font-weight: 600;
         background-color: #0065FC;
         color: #FFF;
         border-radius: 15px;
@@ -776,16 +813,18 @@ footer > div {
         align-items: flex-start;
         row-gap: 10px;
         height: 100%;
-        width: 100%;
+        width: 93%;
         margin: 15px 0;
     }
 
-    .filters > h3 {
+    .filters-general > h3 {
         width: 100%;
+        font-size: 110%
     }
 
     .filters-button {
         display: flex;
+        width: 100%;
         column-gap: 2%;
         flex-wrap: wrap;
         align-content: space-around;
@@ -795,46 +834,47 @@ footer > div {
 
     .filters {
         box-sizing: border-box;
-        min-width: 40%;
         height: 50px;
         border: 3px solid #F2F2F2;
-        transform: none;
-        transition: 0.1s;
-        z-index: 1; 
-    }
-
-    .filters:hover {
-        border: none;
+        border-radius: 25px;
+        margin: 0;
     }
 
     .filters .fas {
         box-sizing: border-box;
-        height: 100%;
-        width: 50px;
-        min-height: 50px;
+        height: 50px;
+        padding: 23px;
+        font-size: 18px;
+        position: relative;
+        left: -2px;
     }
 
     .filters > p {
-        box-sizing: border-box;
+        font-size: 80%;
         padding: 0 10px;
-        width: 100%;
-        font-size: medium;
+        position: relative;
+        left: -2px;
     }
 
     /*----------------------Style Info-city--------------------*/
     .info-city {
-        align-items: flex-start;
-        justify-content: space-between;
+        width: 93%;
+        justify-content: space-around;
+        align-items: center;
     }
 
     .info-city > img {
-        width: 9%;
-        height: 9%;
-        margin-right: 5%;
+        align-self: baseline;
+        width: 7%;
+        height: 7%;
+        margin-right: 3%;
+        align-self: flex-start;
     }
 
     .info-city > p {
-        padding: 1% 0;
+        width: 90%;
+        margin: 3% 0;
+        padding: 0;
     }
 
     /* -----------------------Section Lodging Popular-----------------------*/
@@ -845,23 +885,176 @@ footer > div {
     }
 
     .populars {
+        justify-content: space-between;
         width: 100%;
+        max-width: 767px;
+        padding: 6% 2%;
         align-items: center;
+        border-radius: 0;
     }
 
     .populars > header {
         align-self: center;
         width: 93%;
         justify-content: space-between;
-        font-size: 130%;
-    }
-
-    .populars > header >h2, .populars > header > i {
+        margin-bottom: 4%;
         font-size: 100%;
     }
 
     .cards-popular {
         width: 93%;
+        max-height: 930px;
+        height: 100%;
+        row-gap: 15px;
     }
 
+    .card-popular {
+        width: 100%;
+        height: 30vw;
+        max-height: 300px;
+        column-gap: 0;
+    }
+    
+    .cards-popular a {
+        width: 100%;
+        height: 100%;
+        padding-right: 0;
+    }
+    .img-popular {
+        width: 35%;
+        height: 100%;
+        margin-right: 0;
+        object-fit: cover;
+    }
+
+    .info-popular {
+        height: 100%;
+        width: 65%;
+        padding: 4% 8% 3% 2%;
+    }
+
+    .text-popular {
+        font-size: 100%;
+        row-gap: 5px;
+    }
+
+    /*----------Style Lodging---------------*/
+    #lodging {
+        width: 93%;
+        align-self: center;
+        background-color: #FFF;
+        font-size: 100%;
+    }
+
+    #lodging > header {
+        font-size: 100%;
+    }
+
+    #lodging > div {
+        row-gap: 15px;
+    }
+    .lodging-block1, .lodging-block2 {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 15px;
+        height: 100%;
+        max-height: none;
+    }
+
+    .card-lodging {
+        width: 100%;
+        max-width: 713px;
+        height: 45vw;
+        max-height: 450px;
+        box-shadow: 3px 3px 15px 5px #F2F2F2;
+    }
+
+    .card-lodging a {
+        width: 100%;
+        height: 100%;
+        max-height: none;
+    }
+
+    .img-lodging {
+        width: 100%;
+        height: 55%;
+        max-height: none;
+    }
+
+    .img-lodging > img {
+        width: 100%;
+        height: 25vw;
+        max-height: 250px;
+        object-fit: cover;
+    }
+
+    .info-lodging {
+        height: 45%;
+        max-height: 202px;
+        padding: 3% 4%;
+    }
+
+    #lodging > form > input {
+        background-color: #FFF;
+    }
+
+    /*-----------------Style Activities-----------------------*/
+    #activities {
+        width: 93%;
+        margin: 2% 0;
+    }
+    
+    #activities > header {
+        margin: 7% 0;
+    }
+    .activities {
+        flex-direction: column;
+        height: 100%;
+        max-height: none;
+        row-gap: 15px;
+    }
+
+    .duo {
+        row-gap: 15px;
+    }
+    .solo-activity, .duo {
+        width: 100%;
+        max-width: 713px;
+    }
+
+    .solo-activity, .fort, .frioul, .dame, .parc {
+        height: 50vw;
+        max-height: 450px;
+    }
+
+    .activities img {
+        height: 35vw;
+        max-height: 350px;
+    }
+    .activities h3 {
+        height: 15vw;
+        max-height: 100px;
+        padding: 0 5%;
+        align-items: center;
+    }
+
+    /*------------------Style Footer----------------*/
+    footer > div {
+        flex-direction: column;
+        margin: 2% 0;
+    }
+
+    .menu-footer {
+        font-size: 120%;
+        width: 100%;
+        margin: 2% 0;
+    }
+
+    .menu-footer > h4 {
+        margin: 2% 0;
+    }
+
+    .menu-footer >p {
+        margin: 2% 0;
+    }
 }
