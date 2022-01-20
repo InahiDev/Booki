@@ -9,7 +9,6 @@ body {
     flex-direction: column;
     align-items: center;
     font-family: Raleway, sans-serif;
-    font-size: min(1vw, 20px);
 }
 
 a {
@@ -940,6 +939,9 @@ footer > div {
         row-gap: 5px;
     }
 
+    .container-lodging-popular {
+        gap: 0;
+    }
     /*----------Style Lodging---------------*/
     #lodging {
         width: 93%;
