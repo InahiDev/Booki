@@ -322,6 +322,7 @@ form :nth-child(3):hover {
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
+    flex-shrink: 1;
 }
 
 .lodging-block1, .lodging-block2  {
@@ -329,12 +330,14 @@ form :nth-child(3):hover {
     justify-content: space-between;
     width: 100%;
     height: 48%;
+    flex-basis: 48%;
+    padding-bottom: 1%;
 }
 
 .card-lodging {
     background-color: #FFF;
-    width: 30%;
     border-radius: 25px;
+    width: 30%;
 }
 
 .card-lodging a {
@@ -418,6 +421,7 @@ form :nth-child(3):hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex-grow: 1;
 }
 
 .card-popular {
@@ -439,7 +443,7 @@ form :nth-child(3):hover {
 .img-popular {
     flex: 1 2 30%;
     box-sizing: border-box;
-    width: 40%;
+    width: 45%;
     height: 100%;
     object-fit: cover;
     border: 6px solid #FFF;
