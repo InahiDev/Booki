@@ -134,10 +134,10 @@ main > form :nth-child(1) {
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     padding: 16px;
-    font-size: 100%;
+    font-size: 110%;
     background-color: #F2F2F2;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
@@ -145,7 +145,7 @@ main > form :nth-child(1) {
 
 form :nth-child(2) {
     box-sizing: border-box;
-    height: 50px;
+    height: 60px;
     padding: 0 4%;
     font-size: 115%;
     font-weight: bold;
@@ -162,12 +162,12 @@ form input::placeholder {
 }
 
 form :nth-child(3) {
-    height: 50px;
-    padding: 0 3%;
+    height: 60px;
+    padding: 0 4%;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     color: #FFF;
-    font-size: 85%;
+    font-size: 90%;
     font-weight: 600;
     background-color: #0065FC;
     border: 3px solid #0065FC;
@@ -214,7 +214,7 @@ form :nth-child(3):hover {
     height: 50px;
     margin: 0 1%;
     border-radius: 25px / 50%;
-    font-size: 100%;
+    font-size: 120%;
     flex-basis: content;
 }
 
@@ -281,6 +281,7 @@ form :nth-child(3):hover {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    height: auto;
     margin: 1% 0%;
 }
 .money, .cheapest {
@@ -288,12 +289,12 @@ form :nth-child(3):hover {
 }
 
 .container-lodging-popular h3 {
-    font-size: 74%;
+    font-size: 120%;
     font-weight: bold;
 }
 
 .container-lodging-popular p {
-    font-size: 63%;
+    font-size: 105%;
 }
 /*----------------------------------Style hebergements-------------------------------*/
 #lodging {
@@ -308,13 +309,14 @@ form :nth-child(3):hover {
     border-radius: 25px;
 }
 
+
 #lodging > header > h2 {
     display: flex;
     align-items: center;
     height: 40px;
-    font-size: 125%;
+    font-size: 150%;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 /*---------Cards-lodging-------------*/
@@ -323,26 +325,27 @@ form :nth-child(3):hover {
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
+    height: 30vw;
 }
 
-.lodging-block1, .lodging-block2  {
+.lodging-block1, .lodging-block2 {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 48%;
+    height: 45%;
+}
+
+#lodging a {
+    border-radius: 25px;
+    width: 30%;
 }
 
 .card-lodging {
-    background-color: #FFF;
-    border-radius: 25px;
-    width: 30%;
-    height: auto;
-}
-
-.card-lodging a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    box-shadow: 5px 5px 10px 10px #E8E8E8;
+    background-color: #FFF;
     border-radius: 25px;
     width: 100%;
     height: 100%;
@@ -351,7 +354,13 @@ form :nth-child(3):hover {
 .img-lodging {
     width: 100%;
     height: 55%;
-    overflow: hidden;
+    flex-grow: 0;
+}
+
+.img-lodging > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     box-sizing: border-box;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
@@ -359,25 +368,21 @@ form :nth-child(3):hover {
     border-bottom: none;
 }
 
-.img-lodging img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
 .info-lodging {
     width: 100%;
-    height: 45%;
+    flex-basis: 45%;
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
-    padding: 5% 6%;
+    padding: 4% 6%;
 }
 
 /*-------------Input Lodging-----------*/
 #lodging > form {
     width: 100%;
+    margin: 1% 0;
 }
 #lodging > form > input {
     font-size: 120%;
@@ -411,11 +416,11 @@ form :nth-child(3):hover {
     width: 100%;
     height: 40px;
     align-self: flex-start;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .populars > header > h2 {
-    font-size: 125%;
+    font-size: 150%;
     font-weight: bold;
 }
 
@@ -427,11 +432,14 @@ form :nth-child(3):hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex-grow: 1;
 }
 
 .card-popular {
     width: 100%;
     height: 30%;
+    box-shadow: 5px 5px 10px 5px #E8E8E8;
+    border-radius: 25px;
 }
 
 .card-popular a {
@@ -446,9 +454,8 @@ form :nth-child(3):hover {
 }
 
 .img-popular {
-    flex: 1 2 30%;
     box-sizing: border-box;
-    width: 45%;
+    width: 38%;
     height: 100%;
     object-fit: cover;
     border: 6px solid #FFF;
@@ -457,14 +464,13 @@ form :nth-child(3):hover {
 }
 
 .info-popular {
-    flex: 2 1 70%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
-    width: 60%;
+    width: 62%;
     height: 100%;
-    padding: 4%;
+    padding: 5% 6%;
 }
 
 .text-popular {
@@ -492,8 +498,7 @@ form :nth-child(3):hover {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 24vw;
-    max-height: 461px;
+    height: 460px;
 }
 
 .activities h3 {
@@ -501,8 +506,13 @@ form :nth-child(3):hover {
     box-sizing: border-box;
     font-size: 120%;
     font-weight: bold;
-    padding: 7%;
+    padding: 6%;
     width: 100%;
+    border-radius: 25px;
+}
+
+.activities img {
+    flex-grow: 1;
 }
 
 .link-activities {
@@ -512,14 +522,14 @@ form :nth-child(3):hover {
     box-sizing: border-box;
     width: 100%;
     height: 100%;
-    border-radius: max(1.3vw, 25px);
+    border-radius: 25px;
 }
 
 .solo-activity {
     width: 23%;
     height: 100%;
     border-radius: 25px;
-    box-shadow: -5px -5px 10px #F2F2F2, 5px 5px 10px #F2F2F2;
+    box-shadow: 5px 5px 10px #F2F2F2;
 }
 
 .solo-activity img {
@@ -528,7 +538,6 @@ form :nth-child(3):hover {
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     object-fit: cover;
-    z-index: 1;
 }
 
 .duo {
@@ -543,14 +552,13 @@ form :nth-child(3):hover {
     height: 52%;
     width: 100%;
     border-radius: 25px;
-    box-shadow: -5px -5px 10px #F2F2F2, 5px 5px 10px #F2F2F2;
+    box-shadow: 5px 5px 10px #F2F2F2;
 }
 
 .fort img {
     width: 100%;
     height: 68%;
     object-fit: cover;
-    position: relative;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     z-index: 1;
@@ -560,7 +568,7 @@ form :nth-child(3):hover {
     width: 100%;
     height: 37%;
     border-radius: 25px;
-    box-shadow: -5px -5px 10px #F2F2F2, 5px 5px 10px #F2F2F2;
+    box-shadow: 5px 5px 10px #F2F2F2;
 }
 
 .frioul img {
@@ -575,7 +583,7 @@ form :nth-child(3):hover {
     width: 100%;
     height: 43%;
     border-radius: 25px;
-    box-shadow: -5px -5px 10px #F2F2F2, 5px 5px 10px #F2F2F2;
+    box-shadow: 5px 5px 10px #F2F2F2;
 }
 
 .dame img {
@@ -591,7 +599,7 @@ form :nth-child(3):hover {
     width: 100%;
     height: 45%;
     border-radius: 25px;
-    box-shadow: -5px -5px 10px #F2F2F2, 5px 5px 10px #F2F2F2;
+    box-shadow: 5px 5px 10px #F2F2F2;
 }
 
 .parc img {
@@ -639,7 +647,7 @@ footer > div {
 .card-lodging:hover, .card-popular:hover, .solo-activity:hover, .fort:hover, .frioul:hover, .dame:hover, .parc:hover, .filters:hover {
     transform: scale(1.1);
     transition: 0.5s;
-    z-index: 2;
+    z-index: 1;
 }
 
 /*--------------------------------- Version Téléphone Iphone 8 -----------------------------------------*/
