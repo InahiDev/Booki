@@ -317,12 +317,12 @@ form :nth-child(3):hover {
     margin-bottom: 10px;
 }
 
+/*---------Cards-lodging-------------*/
 #lodging > div {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
-    flex-shrink: 1;
 }
 
 .lodging-block1, .lodging-block2  {
@@ -330,14 +330,13 @@ form :nth-child(3):hover {
     justify-content: space-between;
     width: 100%;
     height: 48%;
-    flex-basis: 48%;
-    padding-bottom: 1%;
 }
 
 .card-lodging {
     background-color: #FFF;
     border-radius: 25px;
     width: 30%;
+    height: auto;
 }
 
 .card-lodging a {
@@ -347,24 +346,28 @@ form :nth-child(3):hover {
     border-radius: 25px;
     width: 100%;
     height: 100%;
-    max-height: 250px;
-    max-width: 350px;
 }
 
-.card-lodging img {
+.img-lodging {
     width: 100%;
-    height: 63%;
-    object-fit: cover;
+    height: 55%;
+    overflow: hidden;
     box-sizing: border-box;
-    border: 6px solid #FFF;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
+    border: 6px solid #FFF;
     border-bottom: none;
+}
+
+.img-lodging img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .info-lodging {
     width: 100%;
-    height: 37%;
+    height: 45%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -373,6 +376,9 @@ form :nth-child(3):hover {
 }
 
 /*-------------Input Lodging-----------*/
+#lodging > form {
+    width: 100%;
+}
 #lodging > form > input {
     font-size: 120%;
     font-weight: bold;
@@ -421,7 +427,6 @@ form :nth-child(3):hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex-grow: 1;
 }
 
 .card-popular {
