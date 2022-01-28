@@ -349,7 +349,7 @@ form :nth-child(4) {
     height: 14vw;
     max-height: 270px;
     border-radius: 25px;
-    box-shadow: 5px 5px 10px 10px #EEE;
+    box-shadow: 0px 0px 30px 10px #EEE;
 }
 
 .card-lodging a {
@@ -453,7 +453,7 @@ form :nth-child(4) {
     width: 100%;
     height: 30%;
     border-radius: 25px;
-    box-shadow: 5px 5px 5px 5px #EEE;
+    box-shadow: 0px 0px 30px 10px #EEE;
 }
 
 .card-popular a {
@@ -522,7 +522,7 @@ form :nth-child(4) {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 24vw;
+    height: 30vw;
     max-height: 461px;
 }
 
@@ -552,8 +552,7 @@ form :nth-child(4) {
     width: 23%;
     height: 100%;
     border-radius: 25px;
-    box-shadow: -5px -5px 10px #F2F2F2, 5px 5px 10px #F2F2F2;
-}
+    box-shadow: 0px 0px 20px 10px #EEE;}
 
 .solo-activity img {
     width: 100%;
@@ -577,8 +576,7 @@ form :nth-child(4) {
     height: 52%;
     width: 100%;
     border-radius: 25px;
-    box-shadow: -5px -5px 10px #F2F2F2, 5px 5px 10px #F2F2F2;
-}
+    box-shadow: 0px 0px 20px 10px #EEE;}
 
 .fort img {
     width: 100%;
@@ -594,8 +592,7 @@ form :nth-child(4) {
     width: 100%;
     height: 37%;
     border-radius: 25px;
-    box-shadow: -5px -5px 10px #F2F2F2, 5px 5px 10px #F2F2F2;
-}
+    box-shadow: 0px 0px 20px 10px #EEE;}
 
 .frioul img {
     width: 100%;
@@ -610,8 +607,7 @@ form :nth-child(4) {
     width: 100%;
     height: 43%;
     border-radius: 25px;
-    box-shadow: -5px -5px 10px #F2F2F2, 5px 5px 10px #F2F2F2;
-}
+    box-shadow: 0px 0px 20px 10px #EEE;}
 
 .dame img {
     width: 100%;
@@ -627,8 +623,7 @@ form :nth-child(4) {
     width: 100%;
     height: 45%;
     border-radius: 25px;
-    box-shadow: -5px -5px 10px #F2F2F2, 5px 5px 10px #F2F2F2;
-}
+    box-shadow: 0px 0px 30px 10px #EEE;}
 
 .parc img {
    width: 100%;
@@ -677,6 +672,7 @@ footer > div {
     transform: scale(1.1);
     transition: 0.5s;
     z-index: 2;
+    box-shadow: none;
 }
 
 /*--------------------------------- Version Téléphone Iphone 8 -----------------------------------------*/
@@ -921,7 +917,7 @@ footer > div {
 
     .card-popular {
         width: 100%;
-        height: 30vw;
+        height: 35vw;
         max-height: 300px;
         margin-bottom: 15px;
     }
@@ -946,6 +942,7 @@ footer > div {
 
     .text-popular {
         font-size: 100%;
+        height: 50%;
     }
 
     /*----------Style Lodging---------------*/
@@ -970,8 +967,7 @@ footer > div {
     .card-lodging {
         width: 100%;
         max-width: 713px;
-        height: 45vw;
-        max-height: 450px;
+        height: 58vw;
         box-shadow: 3px 3px 15px 5px #F2F2F2;
         margin-bottom: 15px;
     }
@@ -990,8 +986,7 @@ footer > div {
 
     .img-lodging > img {
         width: 100%;
-        height: 25vw;
-        max-height: 250px;
+        height: 32vw;
         object-fit: cover;
     }
 
@@ -1028,13 +1023,13 @@ footer > div {
     }
 
     .solo-activity, .fort, .frioul, .dame, .parc {
-        height: 50vw;
+        height: 58vw;
         max-height: 450px;
-        margin-bottom: 15px;;
+        margin-bottom: 15px;
     }
 
     .activities img {
-        height: 35vw;
+        height: 43vw;
         max-height: 350px;
     }
     .activities h3 {
