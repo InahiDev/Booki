@@ -729,6 +729,7 @@ footer > div {
         border-top-color: #FFF;
         border-bottom-color: #0065FC;
     }
+    
     nav p {
         display: flex;
         align-items: center;
@@ -1011,6 +1012,7 @@ footer > div {
         font-size: 150%;
         margin: 7% 0;
     }
+
     .activities {
         flex-direction: column;
         height: 100%;
