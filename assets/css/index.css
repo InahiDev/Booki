@@ -385,7 +385,7 @@ form :nth-child(3):hover {
     width: 100%;
     margin: 1% 0;
 }
-#lodging > form > input {
+#lodging > form > button {
     font-size: 120%;
     font-weight: bold;
     border: none;
@@ -393,7 +393,7 @@ form :nth-child(3):hover {
     margin-top: 3%;
 }
 
-#lodging > form > input:hover {
+#lodging > form > button:hover {
     cursor: pointer;
 }
 
@@ -664,6 +664,7 @@ footer > div {
         width: 100%;
         flex-direction: column;
         align-items: center;
+        margin-bottom: 10px;
     }
 
     #logo {
@@ -673,7 +674,7 @@ footer > div {
 
     nav {
         width: 100%;
-        height: 70px;
+        height: 35px;
     }
 
     nav > div {
@@ -697,29 +698,38 @@ footer > div {
     .nav-active p {
         border-top-color: #FFF;
         border-bottom: 3px solid #0065FC;
+        padding: 10% 0;
     }
 
+    .nav-inactive p {
+        padding: 10% 0;
+    }
     .nav-inactive a:hover p {
         border-top-color: #FFF;
         border-bottom-color: #0065FC;
     }
     /*-------------Style Main--------------------*/
     main {
-        padding: 30px 0px;
+        padding: 20px 0px;
+        width: 100%;
+        align-items: center;
     }
 
     main > * {
+        width: 93%;
         margin: 10px 0;
     }
 
     main > h2 {
-        font-size: x-large;
+        width: 93%;
+        align-self: center;
+        font-size: 140%;
     }
 
     main > form {
         box-sizing: border-box;
         margin: 15px 0px;
-        width: 100%;
+        width: 93%;
         height: 50px;
         border: 1px solid #F2F2F2;
         border-radius: 15px;
@@ -765,16 +775,18 @@ footer > div {
         align-items: flex-start;
         row-gap: 10px;
         height: 100%;
-        width: 100%;
+        width: 93%;
         margin: 15px 0;
     }
 
-    .filters > h3 {
+    .filters-general > h3 {
         width: 100%;
+        margin-bottom: 10px;
     }
 
     .filters-button {
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
         align-content: space-between;
     }
@@ -784,6 +796,7 @@ footer > div {
         min-width: 40%;
         height: 50px;
         border: 3px solid #F2F2F2;
+        margin-bottom: 10px;
         transform: none;
         transition: 0.1s;
         z-index: 1; 
@@ -796,24 +809,31 @@ footer > div {
 
     .filters > p {
         box-sizing: border-box;
-        padding: 0 10px;
-        font-size: 100%;
+        margin: 0;
+        padding: 0 13px;
+        font-size: 80%;
+        position: relative;
+        left: -2px;
+        top: 1px;
     }
 
     /*----------------------Style Info-city--------------------*/
     .info-city {
         align-items: flex-start;
         justify-content: space-between;
+        width: 93%;
+        margin-top: 0;
     }
 
     .info-city > img {
-        width: 9%;
-        height: 9%;
+        width: 8%;
+        height: 8%;
         margin-right: 5%;
     }
 
     .info-city > p {
-        padding: 1% 0;
+        padding-top: 5px;
+        font-size: 90%;
     }
 
     /* -----------------------Section Lodging Popular-----------------------*/
@@ -821,33 +841,177 @@ footer > div {
         display: flex;
         flex-direction: column-reverse;
         width: 100%;
+        margin: 5% 0;
     }
 
     .populars {
         width: 100%;
         align-items: center;
+        border-radius: 0px;
+        margin-bottom: 20px;
     }
 
     .populars > header {
         align-self: center;
         width: 93%;
         justify-content: space-between;
-        font-size: 130%;
+        margin: 5% 0;
     }
 
     .populars > header >h2, .populars > header > i {
-        font-size: 100%;
+        font-size: 130%;
     }
 
     .cards-popular {
         width: 93%;
-        height: 450px;
+        flex-grow: 0;
+        margin-bottom: 20px;
+    }
+
+    .card-popular {
+        height: 140px;
+        margin-bottom: 10px;
     }
 
     .card-popular a {
         height: 100%;
     }
+
     .img-popular {
         height: 100%;
+    }
+
+    .text-popular {
+        justify-content: flex-start;
+        font-size: 80%;
+    }
+
+    .text-popular > h3 {
+        margin-bottom: 8px;
+    }
+
+    /*----------Style Lodging------------*/
+    #lodging {
+        width: 93%;
+        align-self: center;
+        background-color: #FFF;
+        border-radius: 0;
+    }
+
+    #lodging > header {
+        font-size: 85%;
+    }
+
+    #lodging > div {
+        height: auto;
+    }
+
+    .lodging-block1, .lodging-block2 {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #lodging a {
+        width: 100%;
+    }
+
+    .card-lodging {
+        height: 200px;
+        margin-bottom: 15px;
+        box-shadow: 5px 5px 30px 5px #F2F2F2;
+    }
+
+    .img-lodging {
+        height: 62%;
+    }
+
+    .info-lodging {
+        padding: 10px 15px;
+        flex-basis: 0;
+    }
+    .info-lodging > h3 {
+        font-size: 90%;
+    }
+
+    .info-lodging > p {
+        font-size: 80%;
+    }
+
+    #lodging > form > button {
+        margin-top: 5%;
+        background-color: #FFF;
+        font-size: 110%;
+    }
+
+    /*----------Style Activities-------*/
+    #activities {
+        width: 93%;
+    }
+
+    #activities > header {
+        font-size: 120%;
+        margin-bottom: 30px;
+    }
+
+    .activities {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .solo-activity, .duo {
+        width: 100%;
+    }
+
+    .solo-activity, .fort, .frioul, .dame, .parc {
+        height: 200px;
+        margin-bottom: 20px;
+    }
+
+    .port img {
+        object-position: center 15%;
+    }
+
+    .frioul img {
+        object-position: center 20% ;
+    }
+
+    .calanques img {
+        object-position: center 15%;
+    }
+
+    .dame img {
+        object-position: center 20%;
+    }
+    .activities img {
+        height: 70%;
+    }
+
+    .activities h3 {
+        height: 30%;
+        font-size: 90%;
+    }
+
+    /*-------------Style Footer------------*/
+    footer > div {
+        width: 85%;
+        flex-direction: column;
+        padding: 12% 0;
+    }
+
+    footer > div > :nth-child(1), footer > div > :nth-child(2) {
+        margin-bottom: 25px;
+    }
+
+    .menu-footer {
+        width: 100%;
+    }
+
+    .menu-footer h4 {
+        margin-bottom: 15px;
+    }
+
+    .menu-footer p {
+        font-size: 90%;
+        margin-bottom: 7px;
     }
 }
