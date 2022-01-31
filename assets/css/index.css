@@ -189,7 +189,7 @@ form :nth-child(3):hover {
 .filters-general {
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: baseline;
     width: 100%;
     margin: 25px 0;
     font-weight: bold;
@@ -214,6 +214,7 @@ form :nth-child(3):hover {
     border: 3px solid #F2F2F2;
     height: 50px;
     margin: 0 1%;
+    margin-bottom: 10px;
     border-radius: 25px / 50%;
     font-size: 120%;
     flex-basis: content;
@@ -658,7 +659,6 @@ footer > div {
 /*--------------------------------- Version Téléphone Iphone 8 -----------------------------------------*/
 @media all and (max-width: 767px)
 {
-
     /*Style Header*/
     body > header {
         width: 100%;
@@ -695,14 +695,17 @@ footer > div {
         font-size: 110%;
     }
 
+    .nav-active, .nav-inactive{
+        min-width: none;
+    }
     .nav-active p {
         border-top-color: #FFF;
         border-bottom: 3px solid #0065FC;
-        padding: 10% 0;
+        padding: 25px 0;
     }
 
     .nav-inactive p {
-        padding: 10% 0;
+        padding: 25px 0;
     }
     .nav-inactive a:hover p {
         border-top-color: #FFF;
@@ -710,13 +713,12 @@ footer > div {
     }
     /*-------------Style Main--------------------*/
     main {
-        padding: 20px 0px;
+        margin: 20px 0px;
         width: 100%;
         align-items: center;
     }
 
     main > * {
-        width: 93%;
         margin: 10px 0;
     }
 
@@ -724,6 +726,10 @@ footer > div {
         width: 93%;
         align-self: center;
         font-size: 140%;
+    }
+
+    main > p {
+        width: 93%;
     }
 
     main > form {
@@ -793,13 +799,11 @@ footer > div {
 
     .filters {
         box-sizing: border-box;
-        min-width: 40%;
         height: 50px;
         border: 3px solid #F2F2F2;
         margin-bottom: 10px;
         transform: none;
-        transition: 0.1s;
-        z-index: 1; 
+
     }
 
     .filters > .fas {
@@ -820,19 +824,18 @@ footer > div {
     /*----------------------Style Info-city--------------------*/
     .info-city {
         align-items: flex-start;
-        justify-content: space-between;
         width: 93%;
         margin-top: 0;
     }
 
     .info-city > img {
-        width: 8%;
-        height: 8%;
-        margin-right: 5%;
+        width: 30px;
+        height: 30px;
+        margin-right: 15px;
     }
 
     .info-city > p {
-        padding-top: 5px;
+        padding-top: 10px;
         font-size: 90%;
     }
 
@@ -846,6 +849,7 @@ footer > div {
 
     .populars {
         width: 100%;
+        max-width: 767px;
         align-items: center;
         border-radius: 0px;
         margin-bottom: 20px;
@@ -926,6 +930,7 @@ footer > div {
     }
 
     .info-lodging {
+        box-sizing: border-box;
         padding: 10px 15px;
         flex-basis: 0;
     }
@@ -956,6 +961,10 @@ footer > div {
     .activities {
         flex-direction: column;
         height: auto;
+    }
+
+    .activities h3 {
+        padding: 20px;
     }
 
     .solo-activity, .duo {
@@ -1014,4 +1023,6 @@ footer > div {
         font-size: 90%;
         margin-bottom: 7px;
     }
+
+
 }
