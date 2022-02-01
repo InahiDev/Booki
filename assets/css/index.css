@@ -203,6 +203,7 @@ form :nth-child(4) {
     font-weight: bold;
     width: 100%;
     height: auto;
+    margin: 1% 0;
 }
 
 .filters-general > h3 {
@@ -279,7 +280,7 @@ form :nth-child(4) {
     display: flex;
     align-items: center;
     width: 100%;
-    margin: 2% 0;
+    margin: 1% 0;
 }
 
 .info-city > img {
