@@ -696,7 +696,7 @@ footer > div {
     }
 
     .nav-active, .nav-inactive{
-        min-width: none;
+        min-width: unset;
     }
     .nav-active p {
         border-top-color: #FFF;
