@@ -249,6 +249,7 @@ form :nth-child(4) {
     background-color: #DEEBFF;
     position: relative;
     left: -2px;
+    transition: background-color 0.5s, color 0.5s;
 }
 
 .filters p {
@@ -270,6 +271,7 @@ form :nth-child(4) {
 
 .filters:hover  p {
     color: #0065FC;
+    transition: color 0.5s;
 }
 
 .fa-search {
@@ -675,10 +677,17 @@ footer > div {
     z-index: 2;
 }
 
+.filters:hover .fas{
+    transition: color 0.5s, background-color 0.5s; 
+}
+
+.filters:hover p {
+    transition: color 0.5s;
+}
+
 .card-lodging, .card-popular, .solo-activity, .fort, .frioul, .dame, .parc, .filters {
     transition: 0.5s;
 }
-
 
 /*------------------------------Version Tablette--------------------*/
 @media all and (min-width: 768px) and (max-width: 992px) {
@@ -696,13 +705,13 @@ footer > div {
     nav {
         height: 70%;
         width: 20%;
-        min-width: unset;
+        min-width: 180px;
     }
 
     .nav-active, .nav-inactive {
         height: 100%;
         min-height: unset;
-        min-width: 110px;
+        min-width: 90px;
     }
 
     .nav-active a, .nav-inactive a {
@@ -721,7 +730,7 @@ footer > div {
     main > form :nth-child(1) {
         box-sizing: border-box;
         height: 5vw;
-        padding: 0 10%;
+        padding: 0 5%;
         font-size: 130%;
     }
 
@@ -817,7 +826,7 @@ footer > div {
 {
     /*-----------------Style Général------------------------*/
     body {
-        font-size: min(20px, 4vw);
+        font-size: 15px;
     }
 
     /*Style Header*/
@@ -921,7 +930,7 @@ footer > div {
         height: 100%;
         flex-grow: 1;
         padding-left: 5%;
-        font-size: 90%;
+        font-size: 85%;
     }
 
     main > form :nth-child(2)::placeholder {
@@ -1053,6 +1062,7 @@ footer > div {
     .card-popular {
         width: 100%;
         height: 30vw;
+        min-height: 100px;
         max-height: 300px;
         column-gap: 0;
     }
@@ -1111,6 +1121,7 @@ footer > div {
         width: 100%;
         max-width: 713px;
         height: 45vw;
+        min-height: 100px;
         max-height: 450px;
         box-shadow: 3px 3px 15px 5px #F2F2F2;
     }
@@ -1170,6 +1181,7 @@ footer > div {
 
     .solo-activity, .fort, .frioul, .dame, .parc {
         height: 50vw;
+        min-height: 100px;
         max-height: 450px;
     }
 
