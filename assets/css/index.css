@@ -675,6 +675,11 @@ footer > div {
     z-index: 2;
 }
 
+.card-lodging, .card-popular, .solo-activity, .fort, .frioul, .dame, .parc, .filters {
+    transition: 0.5s;
+}
+
+
 /*------------------------------Version Tablette--------------------*/
 @media all and (min-width: 768px) and (max-width: 992px) {
     
@@ -916,7 +921,7 @@ footer > div {
         height: 100%;
         flex-grow: 1;
         padding-left: 5%;
-        font-size: 20px;
+        font-size: 90%;
     }
 
     main > form :nth-child(2)::placeholder {
@@ -953,7 +958,7 @@ footer > div {
 
     .filters-general > h3 {
         width: 100%;
-        font-size: 110%
+        font-size: 110%;
     }
 
     .filters-button {
