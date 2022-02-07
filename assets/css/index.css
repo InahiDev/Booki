@@ -1112,7 +1112,7 @@ footer > div {
         height: 45vw;
         min-height: 100px;
         max-height: 450px;
-        box-shadow: 3px 3px 15px 5px #F2F2F2;
+        box-shadow: 0 0 15px 5px #F2F2F2;
     }
 
     .card-lodging a {
@@ -1172,6 +1172,7 @@ footer > div {
         height: 50vw;
         min-height: 100px;
         max-height: 450px;
+        box-shadow: 0 0 15px 5px #F2F2F2;
     }
 
     .activities img {
