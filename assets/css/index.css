@@ -75,20 +75,11 @@ nav {
     font-size: 100%;
     font-weight: 200;
     box-sizing: border-box;
-    border-top: 3px solid #0065FC;
+    border-top: 3px solid #FFF;
     border-bottom: 3px solid #FFF;
 }
 
-.nav-inactive {
-    border-top-color: #FFF;
-}
-
-.nav-active p {
-    color: #0065FC;
-    font-weight: 500;
-}
-
-.nav-inactive:hover {
+.nav-inactive:hover, .nav-active:hover {
     box-sizing: border-box;
     border-top: 3px solid #0065FC;
     border-bottom: 3px solid #FFF;
@@ -850,18 +841,18 @@ footer > div {
     }
 
     .nav-active {
-        border-top: none;
-        border-bottom: 3px solid #0065FC;
+        border-bottom: 3px solid #F2F2F2;
     }
 
     .nav-inactive {
         border-bottom: 3px solid #F2F2F2;
     }
     
-    .nav-inactive:hover {
+    .nav-inactive:hover, .nav-active:hover {
         border-top-color: #FFF;
         border-bottom-color: #0065FC;
     }
+
     nav p {
         display: flex;
         align-items: center;
