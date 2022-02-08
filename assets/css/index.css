@@ -849,6 +849,10 @@ footer > div {
         border: none;
     }
 
+    .nav-active, .nav-inactive {
+        height: auto;
+    }
+
     .nav-active {
         border-top: none;
         border-bottom: 3px solid #0065FC;
