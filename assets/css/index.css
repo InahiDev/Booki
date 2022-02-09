@@ -176,7 +176,7 @@ form :nth-child(3) {
     font-size: 85%;
     background-color: #0065FC;
     border: 3px solid #0065FC;
-    transition: color 0.5s, background-color 0.5s;
+    transition: color 0.5s, background-color 0.5s, border-color 0.5s;
 }
 
 form :nth-child(3):hover {
@@ -184,7 +184,7 @@ form :nth-child(3):hover {
     border-color: #DEEBFF;
     color: #0065FC;
     cursor: pointer;
-    transition: color 0.5s, background-color 0.5s;
+    transition: color 0.5s, background-color 0.5s, border-color 0.5s;
 }
 
 form :nth-child(4) {
