@@ -317,7 +317,7 @@ form :nth-child(4) {
     border-radius: 25px;
 }
 
-#lodging > header > h2 {
+#lodging > h2 {
     display: flex;
     align-items: center;
     height: 40px;
@@ -426,7 +426,7 @@ form :nth-child(4) {
     padding: 2%;
 }
 
-.populars > header {
+.header-popular {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -436,7 +436,7 @@ form :nth-child(4) {
     margin-bottom: 17px;
 }
 
-.populars > header > h2 {
+.header-popular > h2 {
     font-size: 140%;
     font-weight: bold;
 }
@@ -514,7 +514,7 @@ form :nth-child(4) {
     margin: 2% 0;
 }
 
-#activities > header {
+#activities > h2 {
     font-size: 140%;
     font-weight: bold;
     margin: 2% 0;
@@ -762,7 +762,7 @@ footer > div {
     }
 
     /*-----------------Section Lodging------------------*/
-    #lodging > header > h2 {
+    #lodging > h2 {
         height: 16px;
         margin: 8px 0;
     }
@@ -789,7 +789,7 @@ footer > div {
     }
 
     /*------------------Section Popular-----------------*/
-    .populars > header {
+    .header-popular {
         height: 16px;
         margin: 8px 0;
     }
@@ -1036,7 +1036,7 @@ footer > div {
         border-radius: 0;
     }
 
-    .populars > header {
+    .header-popular {
         align-self: center;
         width: 88%;
         justify-content: space-between;
@@ -1092,8 +1092,8 @@ footer > div {
         margin-top: 5%;
     }
 
-    #lodging > header {
-        font-size: 100%;
+    #lodging > h2 {
+        font-size: 140%;
     }
 
     .lodging-block1, .lodging-block2 {
@@ -1151,7 +1151,7 @@ footer > div {
         margin: 2% 0;
     }
     
-    #activities > header {
+    #activities > h2 {
         margin: 7% 0;
     }
 
